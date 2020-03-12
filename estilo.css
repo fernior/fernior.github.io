@@ -2,5 +2,12 @@ p {
     font-size: 60px;
 }
 
-#frase{ font-size: 18px; background-color: rgb(22, 184, 233); }
+#frase{ font-size: 18px; 
+    background-color: rgb(22, 184, 233);
+    font-family: 'Press Start 2P', cursive; 
+}
 
+h1 p li {
+    font: bold 36px verdana;
+    text-shadow: rgb(0,0,150) 3px 3px 10px;
+}
