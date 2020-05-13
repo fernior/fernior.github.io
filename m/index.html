@@ -25,7 +25,8 @@
   <script>
     var options = {
       pdfOpenParams: { scrollbar: '1', toolbar: '0', statusbar: '0', messages: '0', navpanes: '0' ,  view: 'FitH'  },
-      forcePDFJS: true
+      forcePDFJS: true,
+      PDFJS_URL: "https://pdfobject.com/pdfjs/web/viewer.html"
     };
     PDFObject.embed("italiannis.pdf", "#my-pdf", options);
   </script>
