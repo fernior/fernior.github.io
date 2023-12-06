@@ -1,52 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La página de Fernando</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+    <title>Pricing example for Bootstrap</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/pricing/">
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/pricing/pricing.css" rel="stylesheet">
+  </head>
+  <body>
     <script>
-  window.SnipcartSettings = {
-    publicApiKey: "MmMxOTk4ZjAtMDc0Ny00YmRhLTg5ZTktNjJmYzQ4NmY5M2M0NjM4Mzc0MTQ3NzMyNjcxNzQ3",
-    loadStrategy: "on-user-interaction",
-  };
-
-  (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var m,g;(g=(m=window.SnipcartSettings).loadCSS)!=null||(m.loadCSS=!0);var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),h(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),f.forEach(function(v){return document.removeEventListener(v,o)})}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
-</script>
-
-
-    <button class="snipcart-add-item"
-  data-item-id="starry-night"
-  data-item-price="79.99"
-  data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-  data-item-image="/assets/images/starry-night.jpg"
-  data-item-name="The Starry Night">
-  Add to cart
-</button>
-    <p> Mi gato es muy gruñón </p>
-
-    <h1>Este es el titulo 1</h1>
-    <h3>Este es el titulo 3</h3>
-    <h6>Este es el titulo 6</h6>
-
-
-    <ol>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ol>
-
-    <!--Inicio de carrito de compras-->
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ul>
-
-</body>
-
+        window.SnipcartSettings = {
+          publicApiKey: "MmMxOTk4ZjAtMDc0Ny00YmRhLTg5ZTktNjJmYzQ4NmY5M2M0NjM4Mzc0MTQ3NzMyNjcxNzQ3",
+          loadStrategy: "on-user-interaction",
+        };
+      
+        (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var m,g;(g=(m=window.SnipcartSettings).loadCSS)!=null||(m.loadCSS=!0);var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),h(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),f.forEach(function(v){return document.removeEventListener(v,o)})}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+      </script>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h5 class="my-0 mr-md-auto font-weight-normal">
+        <img src="https://www.nomilinea.com/assets/img/logo.png" alt="Nomilinea" width="60%">
+      </h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">Inicio</a>
+        <a class="p-2 text-dark" href="#">Nosotros</a>
+        <a class="p-2 text-dark" href="#">Plan de Lealtad</a>
+        <a class="p-2 text-dark" href="#">Características</a>
+        <a class="p-2 text-dark" href="#">Alianzas</a>
+        <a class="p-2 text-dark" href="#">Precios</a>
+        <a class="p-2 text-dark" href="#">Videos</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="#">Ingresar</a>
+    </div>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Pricing</h1>
+      <p class="lead">Todas nuestras licencias incluyen timbrado, usuarios y empresas <b>ilimitadas</b>*</p>
+      <p class="lead">¿Ya eres cliente?  Inicia sesión  y obtén un precio preferencial</p>
+    </div>
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Nomilinea Gratuito</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li>7 días de uso gratis </li>
+                <li>0 Empleados </li>
+                <li>0 Timbres </li>
+                <li>ueldos y Salarios </li>
+                <li>similados a Salarios </li>
+                <li>anuales de uso </li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Inicia tu prueba gratuita</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Nomilinea Básico</h4>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title pricing-card-title">$570 <small class="text-muted">/ mensual</small></h2>
+            <h1 class="card-title pricing-card-title">$6,240 <small class="text-muted">/ al año</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li> Actualizaciones de Ley  	</li>
+                <li> Empresas Ilimitadas 	</li>
+                <li> Usuarios Ilimitados 	</li>
+                <li> Timbrado Ilimitado 	</li>
+                <li> Sueldos y Salarios 	</li>
+                <li> Asimilado a Salarios 	</li>
+                <li> Finiquitos y Aguinaldo 	</li>
+                <li> SUA 	</li>
+                <li> IDSE 	</li>
+                <li> Confronta IMSS 	</li>
+                <li> Kiosco 	</li>
+                <li> Layouts para dispersión bancaria 	</li>
+                <li> Soporte Técnico 	</li>                
+            </ul>
+            <button class="snipcart-add-item btn btn-lg btn-block btn-primary"
+                data-item-id="starry-night"
+                data-item-price="6240"
+                data-item-description="Actualizaciones de Ley, Empresas Ilimitadas, Usuarios Ilimitados, Timbrado Ilimitado, Sueldos y Salarios y mucho más..."
+                data-item-image="https://www.nomilinea.com/assets/img/logo.png"
+                data-item-name="Nomilinea Básico">
+                Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Nomilinea Pro</h4>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title pricing-card-title">$650 <small class="text-muted">/ mensual</small></h2>
+            <h1 class="card-title pricing-card-title">$7,200 <small class="text-muted">/ al año</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li> Actualizaciones de Ley  	</li>
+                <li> Empresas Ilimitadas 	</li>
+                <li> Usuarios Ilimitados 	</li>
+                <li> Timbrado Ilimitado 	</li>
+                <li> Sueldos y Salarios 	</li>
+                <li> Asimilado a Salarios 	</li>
+                <li> Finiquitos y Aguinaldo 	</li>
+                <li> SUA 	</li>
+                <li> IDSE 	</li>
+                <li> Confronta IMSS 	</li>
+                <li> Kiosco 	</li>
+                <li> Layouts para dispersión bancaria 	</li>
+                <li> Soporte Técnico 	</li>  
+                <li> ✔	Reloj Checador sincronizado con nomilinea  	</li>  
+                <li> ✔	Dispersión desde nomilinea (Costo x SPEI $4.00+IVA)  	</li>  
+            </ul>
+            <button class="snipcart-add-item btn btn-lg btn-block btn-primary"
+                data-item-id="starry-night"
+                data-item-price="7200"
+                data-item-description="Actualizaciones de Ley, Empresas Ilimitadas, Usuarios Ilimitados, Timbrado Ilimitado, Sueldos y Salarios, Asimilado a Salarios, Finiquitos y Aguinaldo, SUA, IDSE, Confronta IMSS y mucho más..."
+                data-item-image="https://www.nomilinea.com/assets/img/logo.png"
+                data-item-name="Nomilinea Pro">
+                Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  </body>
 </html>
