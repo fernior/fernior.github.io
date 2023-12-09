@@ -2,6 +2,16 @@
   max-width: 960px;
 }
 
+.uno,.uno:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.dos, .dos:hover{
+  color: #000;
+  text-decoration: none;
+}
+
 /*
  * Custom translucent site header
  */
