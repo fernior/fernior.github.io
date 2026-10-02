@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fernando Junior Hernández — CTO, Platform Engineering Lead y Arquitecto de Soluciones IA & Cloud. 15+ años operando infraestructura crítica. Experto en AWS Bedrock, Gemini Pro, Kubernetes, Terraform y Agentes IA." />
+  <meta name="keywords" content="CTO, Platform Engineering, IA, Cloud, AWS Bedrock, Gemini, Kubernetes, Terraform, n8n, Agentes, Fernando Hernández" />
+  <meta property="og:title" content="Fernando Junior Hernández — CTO & Platform Engineering Lead" />
+  <meta property="og:description" content="Arquitecto de Soluciones IA & Cloud. 15+ años en infraestructura crítica." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fernior.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Fernando Junior Hernández — CTO · Platform Engineering · IA & Cloud</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fernando Junior Hernández",
+    "jobTitle": "CTO | Platform Engineering Lead | AI & Cloud Solutions Architect",
+    "url": "https://fernior.github.io/",
+    "sameAs": [
+      "https://www.credly.com/users/fernando-junior-hernandez",
+      "https://www.credential.net/profile/fernandojuniorhernndezluna933788/wallet"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════
+       BACKGROUND LAYERS
+  ════════════════════════════════════════════ -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+
+  <!-- ════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════ -->
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Navegación principal">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="Fernando Junior Hernández">
+          FJH<span>.dev</span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#ai-stack">IA & Stack</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#credentials">Credenciales</a></li>
+          <li><a href="#contact" class="nav-cta">Contactar</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Menú móvil">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Cerrar menú">✕</button>
+    <a href="#about">Sobre mí</a>
+    <a href="#ai-stack">IA & Stack</a>
+    <a href="#experience">Experiencia</a>
+    <a href="#credentials">Credenciales</a>
+    <a href="#contact">Contactar</a>
+  </div>
+
+  <main>
+
+    <!-- ════════════════════════════════════════════
+         HERO SECTION
+    ════════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="grid-accent" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- LEFT: Copy -->
+          <div class="hero-copy">
+            <div class="hero-eyebrow">
+              <span class="dot" aria-hidden="true"></span>
+              Disponible para roles de alto impacto
+            </div>
+
+            <h1 class="hero-title" id="hero-title">
+              <span class="name-line">Fernando Junior<br>Hernández</span>
+              <span class="role-line">
+                CTO &nbsp;·&nbsp; Líder de Platform Engineering<br>
+                Arquitecto de Soluciones IA &amp; Cloud
+              </span>
+            </h1>
+
+            <p class="hero-subtitle">
+              15+ años transformando infraestructura crítica en ventaja competitiva.
+              Del datacenter al multicloud, de los procesos manuales a los
+              ecosistemas de <strong style="color:#e2e8f0;">Agentes IA autónomos</strong>.
+              Presupuestos de hasta $220 MDP. 100M+ ciudadanos impactados.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn-primary" aria-label="Inicia un workflow conmigo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                Inicia un workflow conmigo
+              </a>
+              <a href="#credentials" class="btn-secondary" aria-label="Verificar credenciales">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Verificar Credenciales
+              </a>
+            </div>
+
+            <!-- Quick link badges -->
+            <div style="display:flex;gap:10px;margin-top:28px;flex-wrap:wrap;" role="list" aria-label="Perfiles externos">
+              <a href="https://www.credly.com/users/fernando-junior-hernandez"
+                 target="_blank" rel="noopener noreferrer"
+                 role="listitem"
+                 style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.25);border-radius:6px;color:#f59e0b;font-size:0.72rem;font-weight:600;text-decoration:none;font-family:var(--font-mono);letter-spacing:0.04em;transition:all 0.2s;"
+                 onmouseover="this.style.background='rgba(245,158,11,0.18)'"
+                 onmouseout="this.style.background='rgba(245,158,11,0.1)'">
+                🏅 Credly Badges
+              </a>
+              <a href="https://www.credential.net/profile/fernandojuniorhernndezluna933788/wallet"
+                 target="_blank" rel="noopener noreferrer"
+                 role="listitem"
+                 style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.22);border-radius:6px;color:#00d4ff;font-size:0.72rem;font-weight:600;text-decoration:none;font-family:var(--font-mono);letter-spacing:0.04em;transition:all 0.2s;"
+                 onmouseover="this.style.background='rgba(0,212,255,0.15)'"
+                 onmouseout="this.style.background='rgba(0,212,255,0.08)'">
+                🎓 Credential Wallet
+              </a>
+              <a href="https://fernior.github.io/"
+                 target="_blank" rel="noopener noreferrer"
+                 role="listitem"
+                 style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.22);border-radius:6px;color:#a78bfa;font-size:0.72rem;font-weight:600;text-decoration:none;font-family:var(--font-mono);letter-spacing:0.04em;transition:all 0.2s;"
+                 onmouseover="this.style.background='rgba(124,58,237,0.18)'"
+                 onmouseout="this.style.background='rgba(124,58,237,0.08)'">
+                🌐 Portafolio Live
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT: Terminal Widget -->
+          <div class="terminal-widget" role="region" aria-label="Perfil en terminal interactiva">
+            <div class="terminal-header">
+              <div class="terminal-dots" aria-hidden="true">
+                <div class="terminal-dot red"></div>
+                <div class="terminal-dot amber"></div>
+                <div class="terminal-dot green"></div>
+              </div>
+              <span class="terminal-title">gemini-pro — profile query</span>
+            </div>
+            <div class="terminal-body" id="terminal-body" aria-live="polite" aria-label="Salida del terminal Gemini Pro"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         STATS BAR
+    ════════════════════════════════════════════ -->
+    <div class="stats-bar" aria-label="Métricas clave de carrera" role="region">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <span class="stat-number" data-target="15" data-suffix="+" aria-label="Más de 15 años de experiencia">0</span>
+            <span class="stat-label">Años de Experiencia</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-1">
+            <span class="stat-number" data-target="100" data-suffix="M+" aria-label="Más de 100 millones de ciudadanos impactados">0</span>
+            <span class="stat-label">Ciudadanos Impactados</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <span class="stat-number" data-target="220" data-prefix="$" data-suffix="MDP" aria-label="220 millones de pesos de presupuesto gestionado">0</span>
+            <span class="stat-label">Presupuesto Gestionado</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <span class="stat-number" data-target="95" data-suffix="%" aria-label="95 por ciento de mejora en pipelines CI/CD">0</span>
+            <span class="stat-label">Mejora en CI/CD Pipelines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         ABOUT SECTION
+    ════════════════════════════════════════════ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Left: Bio text -->
+          <div class="about-text">
+            <span class="section-label" aria-hidden="true">Sobre mí</span>
+            <h2 class="section-title" id="about-title">Donde la estrategia<br>se convierte en código</h2>
+
+            <p>
+              Con <strong>más de 15 años</strong> operando infraestructura crítica a escala nacional e internacional,
+              he aprendido que la tecnología más poderosa no es el modelo de IA más avanzado ni el cluster de Kubernetes
+              más sofisticado — es la <em>capacidad de construir equipos que se mueven como un organismo vivo</em>,
+              con propósito compartido y ejecución implacable.
+            </p>
+
+            <div class="colony-callout">
+              <p>
+                Igual que una colonia bien organizada: donde cada individuo conoce su rol, anticipa las necesidades
+                del colectivo y actúa sin necesidad de órdenes explícitas; Un equipo de ingeniería alineado bajo
+                una visión común puede mover montañas, repeler cualquier amenaza externa y construir ecosistemas
+                que perduran mucho después de que el proyecto "termina". He visto a equipos de cuatro personas superar
+                lo que cientos no pudieron, precisamente porque trabajaban como <em>una sola mente distribuida</em>.
+              </p>
+            </div>
+
+            <p>
+              En el <strong>INE</strong>, diseñé y operé la infraestructura tecnológica que soportó procesos electorales
+              para <em>más de 100 millones de ciudadanos</em>, gestionando un presupuesto de $220 MDP y siendo pionero
+              en la adopción de <strong>entornos híbridos</strong> en el sector público mexicano.
+              En <strong>MetLife México</strong>, rediseñé los pipelines de CI/CD logrando una mejora del
+              <em>95%</em> en velocidad de entrega. En <strong>OFINSA</strong>, escalo como CTO construyendo
+              la siguiente generación de plataformas habilitadas por IA.
+            </p>
+
+            <p>
+              Hoy, mi enfoque está en la intersección de <strong>Platform Engineering</strong>,
+              <em>orquestación de Agentes IA</em> y arquitectura multicloud - el lugar donde las organizaciones
+              saltan de la eficiencia operativa a la <strong>ventaja competitiva irreversible</strong>.
+            </p>
+          </div>
+
+          <!-- Right: Values cards -->
+          <div>
+            <div class="values-grid">
+              <div class="value-card reveal">
+                <span class="value-icon" aria-hidden="true">⚡</span>
+                <div class="value-title">Ejecución a velocidad</div>
+                <div class="value-desc">De la idea al deploy en producción. Pipelines como ciudadanos de primera clase.</div>
+              </div>
+              <div class="value-card reveal reveal-delay-1">
+                <span class="value-icon" aria-hidden="true">🧠</span>
+                <div class="value-title">IA nativa, no opcional</div>
+                <div class="value-desc">Integro LLMs y agentes autónomos en el core del producto, no como add-on.</div>
+              </div>
+              <div class="value-card reveal reveal-delay-2">
+                <span class="value-icon" aria-hidden="true">🏛️</span>
+                <div class="value-title">Arquitectura que escala</div>
+                <div class="value-desc">Terraform, Kubernetes y OpenShift como fundamentos, no como deuda técnica.</div>
+              </div>
+              <div class="value-card reveal reveal-delay-3">
+                <span class="value-icon" aria-hidden="true">🛡️</span>
+                <div class="value-title">Resiliencia by design</div>
+                <div class="value-desc">Infraestructura que sobrevive a elecciones, picos de tráfico y fallas en cascada.</div>
+              </div>
+              <div class="value-card reveal">
+                <span class="value-icon" aria-hidden="true">🌐</span>
+                <div class="value-title">Multicloud fluido</div>
+                <div class="value-desc">AWS, Azure y GCP no son silos — son nodos de una red unificada de valor.</div>
+              </div>
+              <div class="value-card reveal reveal-delay-1">
+                <span class="value-icon" aria-hidden="true">🐜</span>
+                <div class="value-title">Liderazgo de colonia</div>
+                <div class="value-desc">Equipos autónomos, alineados y capaces de superar cualquier obstáculo externo.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         AI STACK SECTION
+    ════════════════════════════════════════════ -->
+    <section class="ai-stack" id="ai-stack" aria-labelledby="ai-stack-title">
+      <div class="grid-accent" aria-hidden="true"></div>
+      <div class="container">
+        <div class="ai-stack-header reveal">
+          <span class="section-label" aria-hidden="true">Stack Tecnológico</span>
+          <h2 class="section-title" id="ai-stack-title">Ecosistema IA &amp; Platform Engineering</h2>
+          <p class="section-subtitle">
+            No solo conozco las herramientas — las he operado en producción, bajo presión,
+            a escala real. Este es el stack con el que construyo el futuro.
+          </p>
+        </div>
+
+        <div class="ai-categories">
+
+          <!-- Card 1: LLMs & AI Models -->
+          <div class="ai-category reveal">
+            <div class="ai-category-icon blue" aria-hidden="true">🤖</div>
+            <div class="ai-category-title">Modelos &amp; Ecosistemas IA</div>
+            <div class="ai-category-desc">
+              Despliegue y orquestación de LLMs en la nube y on-premise.
+              Desde APIs enterprise hasta instancias locales soberanas.
+            </div>
+            <div class="tech-tags" role="list">
+              <span class="tech-tag blue" role="listitem">Gemini Pro</span>
+              <span class="tech-tag blue" role="listitem">Gemini LLM</span>
+              <span class="tech-tag blue" role="listitem">AWS Bedrock</span>
+              <span class="tech-tag blue" role="listitem">Ollama</span>
+              <span class="tech-tag blue" role="listitem">Nemotron</span>
+              <span class="tech-tag blue" role="listitem">Llama 3.x</span>
+              <span class="tech-tag blue" role="listitem">Qwen</span>
+              <span class="tech-tag blue" role="listitem">Open WebUI</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Agents & Orchestration -->
+          <div class="ai-category reveal reveal-delay-1">
+            <div class="ai-category-icon purple" aria-hidden="true">🕸️</div>
+            <div class="ai-category-title">Agentes &amp; Orquestación</div>
+            <div class="ai-category-desc">
+              Workflows multi-agente, RAG con bases vectoriales
+              y backends de datos en tiempo real para aplicaciones IA.
+            </div>
+            <div class="tech-tags" role="list">
+              <span class="tech-tag purple" role="listitem">n8n</span>
+              <span class="tech-tag purple" role="listitem">Qdrant</span>
+              <span class="tech-tag purple" role="listitem">Supabase</span>
+              <span class="tech-tag purple" role="listitem">Docker</span>
+              <span class="tech-tag purple" role="listitem">Vector RAG</span>
+              <span class="tech-tag purple" role="listitem">MCP Servers</span>
+              <span class="tech-tag purple" role="listitem">LangChain</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Platform Engineering -->
+          <div class="ai-category reveal reveal-delay-2">
+            <div class="ai-category-icon green" aria-hidden="true">⚙️</div>
+            <div class="ai-category-title">Platform Engineering</div>
+            <div class="ai-category-desc">
+              Infrastructure as Code, orquestación de contenedores
+              y plataformas internas que empoderan a los equipos de desarrollo.
+            </div>
+            <div class="tech-tags" role="list">
+              <span class="tech-tag green" role="listitem">Terraform</span>
+              <span class="tech-tag green" role="listitem">Kubernetes</span>
+              <span class="tech-tag green" role="listitem">OpenShift</span>
+              <span class="tech-tag green" role="listitem">Helm</span>
+              <span class="tech-tag green" role="listitem">ArgoCD</span>
+              <span class="tech-tag green" role="listitem">Ansible</span>
+              <span class="tech-tag green" role="listitem">GitOps</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Cloud -->
+          <div class="ai-category reveal">
+            <div class="ai-category-icon amber" aria-hidden="true">☁️</div>
+            <div class="ai-category-title">Multicloud &amp; Infraestructura</div>
+            <div class="ai-category-desc">
+              Arquitecturas multicloud nativas, migración zero-downtime
+              y gobierno de costos en los tres hyperscalers principales.
+            </div>
+            <div class="tech-tags" role="list">
+              <span class="tech-tag amber" role="listitem">AWS</span>
+              <span class="tech-tag amber" role="listitem">Azure</span>
+              <span class="tech-tag amber" role="listitem">GCP</span>
+              <span class="tech-tag amber" role="listitem">AWS Bedrock</span>
+              <span class="tech-tag amber" role="listitem">Azure OpenAI</span>
+              <span class="tech-tag amber" role="listitem">Vertex AI</span>
+              <span class="tech-tag amber" role="listitem">CloudFormation</span>
+            </div>
+          </div>
+
+          <!-- Card 5: CI/CD & DevSecOps -->
+          <div class="ai-category reveal reveal-delay-1">
+            <div class="ai-category-icon pink" aria-hidden="true">🚀</div>
+            <div class="ai-category-title">CI/CD &amp; DevSecOps</div>
+            <div class="ai-category-desc">
+              Pipelines de entrega continua que reducen el time-to-market
+              e integran seguridad sin sacrificar velocidad.
+            </div>
+            <div class="tech-tags" role="list">
+              <span class="tech-tag pink" role="listitem">GitHub Actions</span>
+              <span class="tech-tag pink" role="listitem">GitLab CI</span>
+              <span class="tech-tag pink" role="listitem">Jenkins</span>
+              <span class="tech-tag pink" role="listitem">SonarQube</span>
+              <span class="tech-tag pink" role="listitem">Trivy</span>
+              <span class="tech-tag pink" role="listitem">SAST/DAST</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Observability -->
+          <div class="ai-category reveal reveal-delay-2">
+            <div class="ai-category-icon teal" aria-hidden="true">📡</div>
+            <div class="ai-category-title">Observabilidad &amp; Datos</div>
+            <div class="ai-category-desc">
+              Stack de monitoreo end-to-end, alertas inteligentes
+              y data pipelines que convierten logs en decisiones.
+            </div>
+            <div class="tech-tags" role="list">
+              <span class="tech-tag teal" role="listitem">Prometheus</span>
+              <span class="tech-tag teal" role="listitem">Grafana</span>
+              <span class="tech-tag teal" role="listitem">ELK Stack</span>
+              <span class="tech-tag teal" role="listitem">Datadog</span>
+              <span class="tech-tag teal" role="listitem">PostgreSQL</span>
+              <span class="tech-tag teal" role="listitem">Redis</span>
+              <span class="tech-tag teal" role="listitem">Kafka</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Highlight banner -->
+        <div style="background:linear-gradient(135deg,rgba(0,212,255,0.06),rgba(124,58,237,0.06));border:1px solid rgba(0,212,255,0.18);border-radius:20px;padding:32px 40px;text-align:center;" class="reveal">
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--accent-primary);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:12px;">
+            🏆 Diferenciador Clave
+          </p>
+          <p style="font-size:1.1rem;color:var(--text-primary);font-weight:600;line-height:1.6;max-width:700px;margin:0 auto;">
+            No solo implemento IA - la integro como
+            <span style="color:var(--accent-primary);">capa transversal de la plataforma</span>,
+            desde los modelos fundacionales hasta los agentes autónomos que
+            <span style="color:#a78bfa;">operan workflows de negocio sin intervención humana</span>.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         TIMELINE / EXPERIENCE SECTION
+    ════════════════════════════════════════════ -->
+    <section class="timeline-section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="timeline-header reveal">
+          <span class="section-label" aria-hidden="true">Trayectoria</span>
+          <h2 class="section-title" id="experience-title">Experiencia Profesional</h2>
+          <p class="section-subtitle" style="margin:0 auto;">
+            Una línea de tiempo de impacto medible, decisiones de alto riesgo
+            y ecosistemas construidos para durar.
+          </p>
+        </div>
+
+        <div class="timeline" role="list">
+
+          <!-- OFINSA -->
+          <div class="timeline-item reveal" role="listitem">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-period">2026 — Presente</div>
+              <div class="timeline-company">OFINSA</div>
+              <div class="timeline-role">Gerente de Sistemas / CTO</div>
+              <p class="timeline-desc">
+                Liderazgo tecnológico integral de la organización. Construcción de la
+                plataforma de próxima generación habilitada por IA, modernización de la
+                infraestructura heredada y establecimiento de la cultura DevOps.
+              </p>
+              <div class="timeline-achievements">
+                <div class="timeline-achievement">Diseño e implementación de arquitectura multicloud AWS/Azure</div>
+                <div class="timeline-achievement">Integración de LLMs locales (Ollama, Llama, Qwen) para automatización interna</div>
+                <div class="timeline-achievement">Plataforma de agentes n8n para workflows de negocio autónomos</div>
+                <div class="timeline-achievement">Estrategia tecnológica alineada a objetivos de negocio 2024–2027</div>
+              </div>
+            </article>
+          </div>
+
+          <!-- INE -->
+          <div class="timeline-item reveal reveal-delay-1" role="listitem">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-period">2025 - 2026</div>
+              <div class="timeline-company">Instituto Nacional Electoral</div>
+              <div class="timeline-role">Director de Infraestructura y Tecnología Aplicada</div>
+              <p class="timeline-desc">
+                Dirección de la infraestructura tecnológica del proceso democrático de México.
+                Operación de sistemas para más de 100 millones de ciudadanos con
+                disponibilidad del 99.99% durante procesos electorales críticos.
+              </p>
+              <div class="timeline-achievements">
+                <div class="timeline-achievement">Gestión de presupuesto de <strong style="color:var(--accent-primary);">$220 MDP</strong> en infraestructura</div>
+                <div class="timeline-achievement">Pionero en adopción de <strong style="color:#a78bfa;">AWS Bedrock</strong> en sector público MX</div>
+                <div class="timeline-achievement">Infraestructura para 100M+ ciudadanos sin incidentes críticos</div>
+                <div class="timeline-achievement">Migración a arquitectura cloud-hybrid con OpenShift y Kubernetes</div>
+              </div>
+            </article>
+          </div>
+
+          <!-- MetLife -->
+          <div class="timeline-item reveal" role="listitem">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-period">2022 — 2026</div>
+              <div class="timeline-company">MetLife México</div>
+              <div class="timeline-role">IT Senior Manager</div>
+              <p class="timeline-desc">
+                Transformación digital del área de tecnología en una de las aseguradoras
+                líderes de México. Rediseño completo de los pipelines de entrega de software
+                y modernización de la plataforma de servicios financieros.
+              </p>
+              <div class="timeline-achievements">
+                <div class="timeline-achievement">Mejora del <strong style="color:var(--accent-green);">95%</strong> en velocidad de pipelines CI/CD</div>
+                <div class="timeline-achievement">Implementación de estrategia DevSecOps end-to-end</div>
+                <div class="timeline-achievement">Reducción del 60% en tiempo de resolución de incidentes</div>
+                <div class="timeline-achievement">Adopción de microservicios y arquitectura orientada a eventos</div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Alsea -->
+          <div class="timeline-item reveal reveal-delay-1" role="listitem">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-period">2021 — 2022</div>
+              <div class="timeline-company">Alsea</div>
+              <div class="timeline-role">Líder de Transformación Digital</div>
+              <p class="timeline-desc">
+                Liderazgo de iniciativas de innovación tecnológica en uno de los operadores
+                de restaurantes más grandes de Latinoamérica. Digitalización de operaciones
+                críticas y modernización del ecosistema tecnológico retail.
+              </p>
+              <div class="timeline-achievements">
+                <div class="timeline-achievement">Transformación digital de operaciones en múltiples países LATAM</div>
+                <div class="timeline-achievement">Implementación de plataformas cloud-first para gestión de cadena de suministro</div>
+                <div class="timeline-achievement">Integración de sistemas ERP y analítica de datos en tiempo real</div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Grupo Lefarma -->
+          <div class="timeline-item reveal" role="listitem">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-period">2012 — 2021</div>
+              <div class="timeline-company">Grupo Lefarma</div>
+              <div class="timeline-role">Líder de Innovación Tecnológica</div>
+              <p class="timeline-desc">
+                Construcción desde los fundamentos de la capacidad tecnológica del grupo.
+                Diseño de la arquitectura de sistemas que soportaría el crecimiento
+                exponencial de la organización en la siguiente década.
+              </p>
+              <div class="timeline-achievements">
+                <div class="timeline-achievement">Diseño de arquitectura de sistemas empresariales escalable</div>
+                <div class="timeline-achievement">Implementación de infraestructura on-premise de alta disponibilidad</div>
+                <div class="timeline-achievement">Gestión y desarrollo del primer equipo de TI de la organización</div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         CREDENTIALS / TRUST SECTION
+    ════════════════════════════════════════════ -->
+    <section class="credentials" id="credentials" aria-labelledby="credentials-title">
+      <div class="grid-accent" aria-hidden="true"></div>
+      <div class="container">
+        <div class="credentials-header reveal">
+          <span class="section-label" aria-hidden="true">Credenciales</span>
+          <h2 class="section-title" id="credentials-title">Certificaciones &amp; Validaciones</h2>
+          <p class="section-subtitle" style="margin:0 auto;">
+            Cada credencial representa horas de práctica real, no solo estudio teórico.
+            Verificables en tiempo real en las plataformas oficiales.
+          </p>
+        </div>
+
+        <!-- Trust Banner: 3 platform cards -->
+        <div class="trust-banner" role="list" aria-label="Plataformas de credenciales">
+
+          <a class="trust-card reveal"
+             href="https://www.credly.com/users/fernando-junior-hernandez"
+             target="_blank" rel="noopener noreferrer"
+             role="listitem"
+             aria-label="Ver badges verificadas en Credly">
+            <div class="trust-logo credly" aria-hidden="true">🏅</div>
+            <div class="trust-name">Credly Badges</div>
+            <div class="trust-desc">
+              Badges digitales verificadas. Cada insignia incluye evidencia
+              de competencia y enlace de validación en tiempo real.
+            </div>
+            <div class="trust-link-label">→ credly.com / fernando-junior-hernandez</div>
+          </a>
+
+          <a class="trust-card reveal reveal-delay-1"
+             href="https://www.credential.net/profile/fernandojuniorhernndezluna933788/wallet"
+             target="_blank" rel="noopener noreferrer"
+             role="listitem"
+             aria-label="Ver wallet de credenciales en Credential.net">
+            <div class="trust-logo credential" aria-hidden="true">🎓</div>
+            <div class="trust-name">Credential Wallet</div>
+            <div class="trust-desc">
+              Wallet de certificaciones internacionales con blockchain-backed
+              verification para autenticidad garantizada e inmutable.
+            </div>
+            <div class="trust-link-label">→ credential.net / wallet</div>
+          </a>
+
+          <a class="trust-card reveal reveal-delay-2"
+             href="https://fernior.github.io/"
+             target="_blank" rel="noopener noreferrer"
+             role="listitem"
+             aria-label="Ver portafolio live en GitHub Pages">
+            <div class="trust-logo portfolio" aria-hidden="true">🌐</div>
+            <div class="trust-name">Portafolio Live</div>
+            <div class="trust-desc">
+              Proyectos en producción, demos técnicas e implementaciones reales
+              que demuestran capacidad técnica sobre el papel.
+            </div>
+            <div class="trust-link-label">→ fernior.github.io</div>
+          </a>
+
+        </div>
+
+        <!-- Certification Badges Grid -->
+        <h3 style="font-size:1rem;font-weight:600;color:var(--text-secondary);margin-bottom:24px;text-align:center;letter-spacing:0.02em;" class="reveal">
+          Certificaciones Destacadas
+        </h3>
+        <div class="cert-grid" role="list" aria-label="Lista de certificaciones">
+
+          <div class="cert-badge reveal" role="listitem">
+            <div class="cert-icon" style="background:rgba(245,158,11,0.12);border:1px solid rgba(245,158,11,0.2);" aria-hidden="true">🏆</div>
+            <div>
+              <div class="cert-name">SAFe 5 Agilist</div>
+              <div class="cert-issuer">Scaled Agile, Inc.</div>
+            </div>
+          </div>
+
+          <div class="cert-badge reveal reveal-delay-1" role="listitem">
+            <div class="cert-icon" style="background:rgba(0,147,208,0.12);border:1px solid rgba(0,147,208,0.2);" aria-hidden="true">☁️</div>
+            <div>
+              <div class="cert-name">Microsoft Azure</div>
+              <div class="cert-issuer">Solutions Architect</div>
+            </div>
+          </div>
+
+          <div class="cert-badge reveal reveal-delay-2" role="listitem">
+            <div class="cert-icon" style="background:rgba(255,153,0,0.12);border:1px solid rgba(255,153,0,0.2);" aria-hidden="true">⚡</div>
+            <div>
+              <div class="cert-name">AWS Certified</div>
+              <div class="cert-issuer">Solutions Architect</div>
+            </div>
+          </div>
+
+          <div class="cert-badge reveal" role="listitem">
+            <div class="cert-icon" style="background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.2);" aria-hidden="true">📋</div>
+            <div>
+              <div class="cert-name">PMP</div>
+              <div class="cert-issuer">Project Management Professional</div>
+            </div>
+          </div>
+
+          <div class="cert-badge reveal reveal-delay-1" role="listitem">
+            <div class="cert-icon" style="background:rgba(99,102,241,0.12);border:1px solid rgba(99,102,241,0.2);" aria-hidden="true">🐳</div>
+            <div>
+              <div class="cert-name">Kubernetes (CKA)</div>
+              <div class="cert-issuer">Cloud Native Computing Foundation</div>
+            </div>
+          </div>
+
+          <div class="cert-badge reveal reveal-delay-2" role="listitem">
+            <div class="cert-icon" style="background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.2);" aria-hidden="true">🔷</div>
+            <div>
+              <div class="cert-name">Google Cloud</div>
+              <div class="cert-issuer">Professional Cloud Architect</div>
+            </div>
+          </div>
+
+          <div class="cert-badge reveal" role="listitem">
+            <div class="cert-icon" style="background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);" aria-hidden="true">🔒</div>
+            <div>
+              <div class="cert-name">ITIL 4 Foundation</div>
+              <div class="cert-issuer">Axelos / PeopleCert</div>
+            </div>
+          </div>
+
+          <div class="cert-badge reveal reveal-delay-1" role="listitem">
+            <div class="cert-icon" style="background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.2);" aria-hidden="true">🛡️</div>
+            <div>
+              <div class="cert-name">CISSP / CompTIA Security+</div>
+              <div class="cert-issuer">Cybersecurity Foundations</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         CTA / CONTACT SECTION
+    ════════════════════════════════════════════ -->
+    <section class="cta-section" id="contact" aria-labelledby="cta-title">
+      <div class="cta-glow-ring" aria-hidden="true"></div>
+      <div class="cta-glow-ring" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:2;">
+
+        <div class="cta-label" aria-hidden="true">Open to Work</div>
+
+        <h2 class="cta-title reveal" id="cta-title">
+          ¿Listo para construir<br>el futuro juntos?
+        </h2>
+
+        <p class="cta-subtitle reveal reveal-delay-1">
+          Si buscas un líder que entienda tanto la visión estratégica como la
+          implementación técnica de ecosistemas IA y plataformas cloud — hablemos.
+          El próximo gran sistema no se construye solo.
+        </p>
+
+        <div class="cta-actions reveal reveal-delay-2">
+          <a href="mailto:fernior@gmail.com?subject=Oportunidad%20Profesional%20-%20CTO%20%2F%20Platform%20Engineering&body=Hola%20Fernando%2C%0A%0AMe%20pongo%20en%20contacto%20contigo%20para..."
+             class="btn-cta btn-cta-primary"
+             aria-label="Inicia un workflow conmigo por email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Inicia un workflow conmigo
+          </a>
+          <a href="https://www.credly.com/users/fernando-junior-hernandez"
+             target="_blank" rel="noopener noreferrer"
+             class="btn-cta btn-cta-secondary"
+             aria-label="Verificar credenciales en Credly">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Verificar Credenciales
+          </a>
+        </div>
+
+        <!-- Contact detail chips -->
+        <div style="display:flex;justify-content:center;gap:16px;margin-top:48px;flex-wrap:wrap;" class="reveal reveal-delay-3">
+          <div style="display:flex;align-items:center;gap:8px;padding:8px 16px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:8px;font-family:var(--font-mono);font-size:0.75rem;color:var(--text-muted);">
+            <span aria-hidden="true">📧</span>
+            <span>fernior@gmail.com</span>
+          </div>
+          <a href="https://fernior.github.io/" target="_blank" rel="noopener noreferrer"
+             style="display:flex;align-items:center;gap:8px;padding:8px 16px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:8px;font-family:var(--font-mono);font-size:0.75rem;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s;"
+             onmouseover="this.style.borderColor='rgba(0,212,255,0.35)'"
+             onmouseout="this.style.borderColor='var(--glass-border)'">
+            <span aria-hidden="true">🌐</span>
+            <span>fernior.github.io</span>
+          </a>
+          <a href="https://www.credly.com/users/fernando-junior-hernandez" target="_blank" rel="noopener noreferrer"
+             style="display:flex;align-items:center;gap:8px;padding:8px 16px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:8px;font-family:var(--font-mono);font-size:0.75rem;color:var(--text-muted);text-decoration:none;transition:border-color 0.2s;"
+             onmouseover="this.style.borderColor='rgba(245,158,11,0.4)'"
+             onmouseout="this.style.borderColor='var(--glass-border)'">
+            <span aria-hidden="true">🏅</span>
+            <span>credly.com/users/fjh</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-copy">
+          © 2026 <span>Fernando Junior Hernández</span> · Construido con ☁️ &amp; 🤖
+        </div>
+        <nav class="footer-links" aria-label="Links del pie de página">
+          <a href="https://fernior.github.io/" target="_blank" rel="noopener noreferrer">Portafolio</a>
+          <a href="https://www.credly.com/users/fernando-junior-hernandez" target="_blank" rel="noopener noreferrer">Credly</a>
+          <a href="https://www.credential.net/profile/fernandojuniorhernndezluna933788/wallet" target="_blank" rel="noopener noreferrer">Credenciales</a>
+          <a href="#hero">↑ Volver arriba</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JS (deferred) -->
+  <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
