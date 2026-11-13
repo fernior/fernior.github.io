@@ -1,39 +1,861 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Fernando Junior Hernández · Director de TI (CIO / CTO)</title>
-    <meta name="title" content="Fernando Junior Hernández · Director de TI (CIO / CTO)" />
-    <meta name="description" content="Director de Tecnologías de la Información (CIO / CTO) con más de 15 años liderando infraestructura de misión crítica, ciberseguridad regulada (CNBV / Farma), ERP e IA." />
-    <meta name="keywords" content="CIO, CTO, Fernando Junior Hernández, Director de TI, Infraestructura Misión Crítica, Ciberseguridad, CNBV, Farma, ERP Intelisis, IA Generativa, MetLife, Alsea, INE, OFINSA" />
-    <meta name="author" content="Fernando Junior Hernández" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#070B14" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
 
-    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://fernior.github.io/" />
-    <meta property="og:title" content="Fernando Junior Hernández · Director de TI (CIO / CTO)" />
-    <meta property="og:description" content="Infraestructura de Misión Crítica · Ciberseguridad & Cumplimiento (CNBV / Farma) · Transformación Digital & ERP · IA Generativa y Agéntica." />
-    <meta property="og:image" content="./fernando-junior-hernandez.jpg" />
+  <!-- Primary Meta Tags -->
+  <title>Fernando Junior Hernández · Director de TI (CIO / CTO)</title>
+  <meta name="title" content="Fernando Junior Hernández · Director de TI (CIO / CTO)" />
+  <meta name="description" content="Director de Tecnologías de la Información (CIO / CTO) con más de 15 años liderando infraestructura de misión crítica, ciberseguridad regulada (CNBV / Farma), ERP e IA." />
+  <meta name="keywords" content="CIO, CTO, Fernando Junior Hernández, Director de TI, Infraestructura Misión Crítica, Ciberseguridad, CNBV, Farma, ERP Intelisis, IA Generativa, MetLife, Alsea, INE, OFINSA" />
+  <meta name="author" content="Fernando Junior Hernández" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#070B14" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Fernando Junior Hernández · Director de TI (CIO / CTO)" />
-    <meta name="twitter:description" content="Infraestructura de Misión Crítica · Ciberseguridad & Cumplimiento (CNBV / Farma) · Transformación Digital & ERP · IA Generativa y Agéntica." />
-    <meta name="twitter:image" content="./fernando-junior-hernandez.jpg" />
+  <!-- Open Graph / LinkedIn / WhatsApp / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fernior.github.io/" />
+  <meta property="og:title" content="Fernando Junior Hernández · Director de TI (CIO / CTO)" />
+  <meta property="og:description" content="Infraestructura de Misión Crítica · Ciberseguridad & Cumplimiento (CNBV / Farma) · Transformación Digital & ERP · IA Generativa y Agéntica." />
+  <meta property="og:image" content="./assets/profile.jpg" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  </head>
-  <body class="bg-[#070B14] text-[#F8FAFC] antialiased selection:bg-sky-500/30 selection:text-sky-200">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fernando Junior Hernández · Director de TI (CIO / CTO)" />
+  <meta name="twitter:description" content="Infraestructura de Misión Crítica · Ciberseguridad & Cumplimiento (CNBV / Farma) · Transformación Digital & ERP · IA Generativa y Agéntica." />
+  <meta name="twitter:image" content="./assets/profile.jpg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Space Grotesk & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#070B14',
+            'obsidian-surface': '#0D1527',
+            'cyan-cloud': '#38BDF8',
+            'crimson-kpi': '#E11D48',
+            'gold-kpi': '#F59E0B',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="bg-[#070B14] text-[#F8FAFC] antialiased selection:bg-sky-500/30 selection:text-sky-200">
+
+  <!-- Floating Glassmorphic Navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Typography Logo -->
+        <a href="#hero" class="flex items-center gap-2.5 group cursor-pointer">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 via-sky-500 to-cyan-400 p-[1.5px] shadow-lg shadow-sky-500/20 group-hover:shadow-sky-500/40 transition-shadow">
+            <div class="w-full h-full rounded-[10px] bg-[#070B14] flex items-center justify-center font-bold tracking-tight text-xs font-mono text-sky-400">
+              FJH
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-bold tracking-tight text-sm sm:text-base flex items-center gap-1.5 text-white">
+              Fernando Junior <span class="text-sky-400">·</span> <span class="text-xs uppercase tracking-wider font-mono text-sky-400 font-semibold" data-i18n="nav.role">CIO / CTO</span>
+            </span>
+            <span class="text-[10px] tracking-wider uppercase font-medium text-slate-400 hidden sm:block">
+              Executive Technology Leader
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+          <a href="#impact" class="px-3 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all" data-i18n="nav.impact">Impacto</a>
+          <a href="#pillars" class="px-3 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all" data-i18n="nav.pillars">Pilares</a>
+          <a href="#cases" class="px-3 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all" data-i18n="nav.cases">Casos de Éxito</a>
+          <a href="#trajectory" class="px-3 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all" data-i18n="nav.trajectory">Trayectoria</a>
+          <a href="#credentials" class="px-3 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all" data-i18n="nav.credentials">Credenciales</a>
+          <a href="#contact" class="px-3 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all" data-i18n="nav.contact">Contacto</a>
+        </nav>
+
+        <!-- Navbar Controls: Lang + Theme + CTA -->
+        <div class="hidden sm:flex items-center gap-2.5">
+          <!-- Language Toggle Button -->
+          <button
+            onclick="window.toggleLanguage()"
+            aria-label="Toggle language"
+            class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono font-semibold border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:border-sky-400/40 hover:bg-white/10 transition-all cursor-pointer"
+          >
+            <i data-lucide="globe" class="w-3.5 h-3.5 text-sky-400"></i>
+            <span id="lang-btn-text">ES</span>
+            <span class="text-[10px] opacity-40">|</span>
+            <span id="lang-btn-alt" class="text-[10px] opacity-60">EN</span>
+          </button>
+
+          <!-- Theme Toggle Button -->
+          <button
+            onclick="window.toggleTheme()"
+            aria-label="Toggle theme"
+            class="p-2 rounded-lg text-xs border border-white/10 bg-white/5 text-slate-300 hover:text-amber-400 hover:border-amber-400/40 hover:bg-white/10 transition-all cursor-pointer"
+          >
+            <i id="theme-toggle-icon" data-lucide="sun" class="w-3.5 h-3.5"></i>
+          </button>
+
+          <!-- Download Executive CV CTA -->
+          <button
+            onclick="window.openCVModal()"
+            class="relative group overflow-hidden rounded-xl p-[1px] focus:outline-none focus:ring-2 focus:ring-sky-400 shadow-md shadow-sky-500/10 hover:shadow-sky-500/25 transition-all cursor-pointer"
+          >
+            <span class="absolute inset-0 bg-gradient-to-r from-sky-500 via-sky-400 to-cyan-400 rounded-xl transition-all duration-300 group-hover:opacity-90"></span>
+            <span class="relative flex items-center gap-2 px-3.5 py-2 rounded-[11px] bg-[#070B14] text-white text-xs font-semibold tracking-wide transition-all group-hover:bg-[#070B14]/85">
+              <i data-lucide="file-text" class="w-3.5 h-3.5 text-sky-400"></i>
+              <span data-i18n="nav.downloadCV">Descargar CV</span>
+            </span>
+          </button>
+        </div>
+
+        <!-- Mobile Controls -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <button
+            onclick="window.toggleLanguage()"
+            class="px-2 py-1 rounded-lg text-xs font-mono font-semibold border border-white/10 bg-white/5 text-sky-400"
+          >
+            ES|EN
+          </button>
+          <button
+            onclick="window.toggleTheme()"
+            class="p-2 rounded-lg border border-white/10 bg-white/5 text-slate-300"
+          >
+            <i data-lucide="sun" class="w-4 h-4"></i>
+          </button>
+          <button
+            id="mobile-menu-btn"
+            class="p-2 rounded-lg border border-white/10 bg-white/5 text-white"
+          >
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="hidden lg:hidden border-b border-white/10 bg-[#070B14]/98 px-4 py-5 shadow-2xl transition-all">
+      <div class="flex flex-col gap-2">
+        <a href="#impact" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/5" data-i18n="nav.impact">Impacto</a>
+        <a href="#pillars" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/5" data-i18n="nav.pillars">Pilares</a>
+        <a href="#cases" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/5" data-i18n="nav.cases">Casos de Éxito</a>
+        <a href="#trajectory" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/5" data-i18n="nav.trajectory">Trayectoria</a>
+        <a href="#credentials" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/5" data-i18n="nav.credentials">Credenciales</a>
+        <a href="#contact" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/5" data-i18n="nav.contact">Contacto</a>
+
+        <div class="pt-3 border-t border-white/10 mt-1">
+          <button
+            onclick="window.openCVModal()"
+            class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-400 text-slate-950 font-semibold text-sm shadow-lg shadow-sky-500/20"
+          >
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+            <span data-i18n="nav.downloadCV">Descargar CV</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 lg:py-32 overflow-hidden">
+    <!-- Interactive Canvas Layer -->
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Ambient Glow Backdrop -->
+    <div class="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] sm:w-[900px] h-[400px] sm:h-[500px] rounded-full opacity-25 blur-[120px] bg-gradient-to-br from-sky-500 via-cyan-600 to-transparent"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Column: Executive Copy & CTAs -->
+        <div class="lg:col-span-7 flex flex-col items-start text-left">
+          
+          <!-- Live Status Badge -->
+          <div id="hero-badge" class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs sm:text-sm font-medium mb-6 backdrop-blur-md transition-all shadow-sm cursor-default">
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            </span>
+            <span class="font-mono text-xs sm:text-sm font-semibold tracking-tight text-emerald-300" data-i18n="hero.statusBadge">
+              Disponible para Posiciones de Dirección de TI (CIO / CTO) · CDMX & Nacional
+            </span>
+          </div>
+
+          <!-- Name -->
+          <h1 id="hero-name" class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.08] mb-3 text-white">
+            Fernando Junior <span class="bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-500 bg-clip-text text-transparent">Hernández</span>
+          </h1>
+
+          <!-- Dynamic Rotating Headline -->
+          <div class="h-10 sm:h-12 flex items-center mb-4 overflow-hidden">
+            <span id="rotating-headline" class="text-xl sm:text-2xl md:text-3xl font-bold font-mono tracking-tight text-sky-400">
+              Chief Information Officer (CIO)
+            </span>
+          </div>
+
+          <!-- Sub-headline -->
+          <div id="hero-subheadline" class="text-sm sm:text-base font-semibold tracking-wide uppercase font-mono mb-5 text-sky-300/90" data-i18n="hero.subheadline">
+            Infraestructura de Misión Crítica · Ciberseguridad & Cumplimiento (CNBV / Farma) · Transformación Digital & ERP · IA Generativa y Agéntica
+          </div>
+
+          <!-- Executive Pitch -->
+          <p id="hero-pitch" class="text-base sm:text-lg leading-relaxed max-w-2xl mb-8 font-normal text-slate-300" data-i18n="hero.pitch">
+            Más de 15 años liderando la estrategia tecnológica nacional, continuidad operativa (BCP/DRP), control financiero (CAPEX/OPEX) y equipos de más de 100 ingenieros en el sector farmacéutico, servicios financieros hiperregulados y multinacionales.
+          </p>
+
+          <!-- Quick Authority Indicators -->
+          <div class="grid grid-cols-3 gap-3 w-full max-w-xl mb-8">
+            <div class="p-2.5 rounded-xl border border-white/8 bg-white/5 text-slate-300 flex flex-col items-start">
+              <span class="text-[11px] font-mono uppercase text-sky-400 font-semibold">Gobernanza TI</span>
+              <span class="text-xs sm:text-sm font-bold mt-0.5" data-i18n="hero.stats.governance">Control CAPEX / OPEX</span>
+            </div>
+            <div class="p-2.5 rounded-xl border border-white/8 bg-white/5 text-slate-300 flex flex-col items-start">
+              <span class="text-[11px] font-mono uppercase text-sky-400 font-semibold">Liderazgo Directivo</span>
+              <span class="text-xs sm:text-sm font-bold mt-0.5" data-i18n="hero.stats.leadership">+100 Ingenieros Dirigidos</span>
+            </div>
+            <div class="p-2.5 rounded-xl border border-white/8 bg-white/5 text-slate-300 flex flex-col items-start">
+              <span class="text-[11px] font-mono uppercase text-sky-400 font-semibold">Misión Crítica</span>
+              <span class="text-xs sm:text-sm font-bold mt-0.5" data-i18n="hero.stats.availability">Alta Disponibilidad 24/7</span>
+            </div>
+          </div>
+
+          <!-- Action CTAs -->
+          <div id="hero-ctas" class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto">
+            <a
+              href="#contact"
+              class="group relative inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm tracking-wide text-slate-950 bg-gradient-to-r from-sky-400 via-sky-300 to-cyan-300 hover:from-sky-300 hover:to-cyan-200 shadow-lg shadow-sky-500/25 transition-all duration-200 cursor-pointer"
+            >
+              <span data-i18n="hero.ctaPrimary">Agendar Conversación Ejecutiva</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <a
+              href="#cases"
+              class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm tracking-wide border border-white/12 bg-white/5 text-white hover:bg-white/10 hover:border-sky-400/40 transition-all cursor-pointer"
+              data-i18n="hero.ctaSecondary"
+            >
+              Ver Casos de Negocio
+            </a>
+
+            <!-- Social Quick Links -->
+            <div class="flex items-center justify-center sm:justify-start gap-2 pt-2 sm:pt-0 sm:ml-2">
+              <a
+                href="https://linkedin.com/in/fernior"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                class="p-3 rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:text-sky-400 hover:border-sky-400/40 transition-all"
+              >
+                <i data-lucide="linkedin" class="w-4 h-4"></i>
+              </a>
+              <a
+                href="https://credly.com/users/fernando-junior-hernandez"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Credly"
+                class="p-3 rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:text-amber-400 hover:border-amber-400/40 transition-all"
+              >
+                <i data-lucide="award" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Executive Photo & Floating Badges -->
+        <div id="hero-photo-wrapper" class="lg:col-span-5 relative flex justify-center items-center">
+          
+          <!-- Outer Illuminated Frame -->
+          <div class="relative w-full max-w-[370px] sm:max-w-[420px] aspect-[4/5] rounded-3xl p-1 bg-gradient-to-b from-sky-400/35 via-cyan-500/10 to-transparent shadow-2xl shadow-sky-950/60 group">
+            
+            <div class="w-full h-full rounded-[23px] overflow-hidden relative border border-white/10 bg-[#0A101D]">
+              <img
+                src="./assets/profile.jpg"
+                alt="Fernando Junior Hernández · CIO / CTO"
+                class="w-full h-full object-cover object-top filter brightness-105 contrast-[1.03] transition-transform duration-700 group-hover:scale-[1.03]"
+                loading="eager"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#070B14]/85 via-transparent to-transparent pointer-events-none"></div>
+
+              <!-- Lower Badge Tag -->
+              <div class="absolute bottom-4 left-4 right-4 p-3 rounded-xl backdrop-blur-md bg-[#070B14]/75 border border-white/10 text-left">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-white font-bold text-xs sm:text-sm">Fernando Junior Hernández</div>
+                    <div class="text-sky-400 font-mono text-[11px] font-medium">Director de TI (CIO / CTO)</div>
+                  </div>
+                  <div class="flex items-center gap-1 px-2 py-0.5 rounded bg-emerald-500/20 border border-emerald-500/40 text-[10px] text-emerald-300 font-mono">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse"></span>
+                    Active
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 1: Top Right -->
+            <div class="absolute -top-4 -right-4 sm:-right-6 p-3 rounded-2xl backdrop-blur-xl border border-sky-400/30 bg-[#0D1527]/90 shadow-xl shadow-sky-950/40 flex items-center gap-2.5 animate-float-1 z-20">
+              <div class="w-8 h-8 rounded-xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-400">
+                <i data-lucide="trending-up" class="w-4 h-4"></i>
+              </div>
+              <div class="text-left">
+                <div class="text-white text-xs font-bold leading-tight" data-i18n="hero.badges.experience">+15 Años Exp. Directiva</div>
+                <div class="text-[10px] font-mono text-sky-400">Dirección y Gestión</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: Middle Left -->
+            <div class="absolute top-1/2 -left-4 sm:-left-8 -translate-y-1/2 p-3 rounded-2xl backdrop-blur-xl border border-emerald-400/30 bg-[#0D1527]/90 shadow-xl shadow-sky-950/40 flex items-center gap-2.5 animate-float-2 z-20">
+              <div class="w-8 h-8 rounded-xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-400">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <div class="text-left">
+                <div class="text-white text-xs font-bold leading-tight" data-i18n="hero.badges.uptime">Misión Crítica 99.9%</div>
+                <div class="text-[10px] font-mono text-emerald-400">Continuidad BCP/DRP</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 3: Bottom Right -->
+            <div class="absolute -bottom-5 -right-2 sm:-right-5 p-3 rounded-2xl backdrop-blur-xl border border-amber-400/30 bg-[#0D1527]/90 shadow-xl shadow-sky-950/40 flex items-center gap-2.5 animate-float-3 z-20">
+              <div class="w-8 h-8 rounded-xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-400">
+                <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+              </div>
+              <div class="text-left">
+                <div class="text-white text-xs font-bold leading-tight" data-i18n="hero.badges.compliance">CNBV & Farma Compliance</div>
+                <div class="text-[10px] font-mono text-amber-400">Auditorías Exitosas</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Metrics Ribbon -->
+  <section id="impact" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider mb-3 border border-sky-400/30 bg-sky-500/10 text-sky-400">
+          <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+          <span data-i18n="metrics.badge">Métricas de Impacto Directivo</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 text-white" data-i18n="metrics.title">
+          Resultados Cuantificables al Servicio del Negocio
+        </h2>
+        <p class="text-base sm:text-lg max-w-2xl font-normal text-slate-400" data-i18n="metrics.subtitle">
+          Indicadores clave de desempeño alcanzados mediante liderazgo estratégico, disciplina financiera y rigor operativo.
+        </p>
+      </div>
+
+      <!-- Bento Grid populated by JS -->
+      <div id="metrics-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    </div>
+  </section>
+
+  <!-- The 4 Pillars of the Modern CIO -->
+  <section id="pillars" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider mb-3 border border-sky-400/30 bg-sky-500/10 text-sky-400">
+          <i data-lucide="layers" class="w-3.5 h-3.5 text-sky-400"></i>
+          <span data-i18n="pillars.badge">Pilares Estratégicos</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 text-white" data-i18n="pillars.title">
+          Los 4 Ejes del CIO / CTO Moderno
+        </h2>
+        <p class="text-base sm:text-lg max-w-2xl font-normal text-slate-400 mb-2" data-i18n="pillars.subtitle">
+          Equilibrio probado entre gobierno corporativo, control presupuestal, ciberseguridad perimetral e innovación tecnológica disruptiva.
+        </p>
+        <span class="text-xs font-mono text-sky-400/80 font-medium" data-i18n="pillars.hint">
+          Pasa el cursor sobre cada tarjeta para explorar herramientas y marcos ejecutivos
+        </span>
+      </div>
+
+      <!-- Bento Grid populated by JS -->
+      <div id="pillars-container" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
+
+    </div>
+  </section>
+
+  <!-- Executive Case Studies -->
+  <section id="cases" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center text-center mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider mb-3 border border-sky-400/30 bg-sky-500/10 text-sky-400">
+          <i data-lucide="bar-chart-3" class="w-3.5 h-3.5 text-sky-400"></i>
+          <span data-i18n="cases.badge">Casos de Éxito Ejecutivos</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 text-white" data-i18n="cases.title">
+          Casos de Negocio & Transformación Real
+        </h2>
+        <p class="text-base sm:text-lg max-w-2xl font-normal text-slate-400" data-i18n="cases.subtitle">
+          Proyectos emblemáticos donde la visión tecnológica resolvió retos complejos de negocio, demostrando ROI y excelencia operativa.
+        </p>
+      </div>
+
+      <!-- Tabs Switcher -->
+      <div id="case-tabs-container" class="flex flex-wrap items-center justify-center gap-2.5 mb-10"></div>
+
+      <!-- Content Container -->
+      <div id="case-content-container"></div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Timeline Track -->
+  <section id="trajectory" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider mb-3 border border-sky-400/30 bg-sky-500/10 text-sky-400">
+          <i data-lucide="git-commit" class="w-3.5 h-3.5 text-sky-400"></i>
+          <span data-i18n="timeline.badge">Línea de Tiempo Ejecutiva</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 text-white" data-i18n="timeline.title">
+          Trayectoria de Liderazgo C-Level
+        </h2>
+        <p class="text-base sm:text-lg max-w-2xl font-normal text-slate-400" data-i18n="timeline.subtitle">
+          Evolución directiva consolidada en sectores de alta complejidad: financiero regulado, electoral, seguros, salud y retail multinacional.
+        </p>
+      </div>
+
+      <!-- Vertical Timeline Wrapper -->
+      <div class="relative max-w-4xl mx-auto">
+        <!-- Base Vertical Track -->
+        <div class="absolute left-4 sm:left-8 top-4 bottom-4 w-[2px] bg-slate-800">
+          <!-- Dynamic Illuminating Scroll Fill -->
+          <div id="timeline-glow-track" class="timeline-track-glow"></div>
+        </div>
+
+        <!-- Items Container populated by JS -->
+        <div id="timeline-container" class="space-y-8 sm:space-y-12"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education, Certifications & Credentials -->
+  <section id="credentials" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center text-center mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider mb-3 border border-sky-400/30 bg-sky-500/10 text-sky-400">
+          <i data-lucide="award" class="w-3.5 h-3.5 text-sky-400"></i>
+          <span data-i18n="credentials.badge">Credenciales & Respaldos</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 text-white" data-i18n="credentials.title">
+          Formación Académica, Certificaciones & Insignias
+        </h2>
+        <p class="text-base sm:text-lg max-w-2xl font-normal text-slate-400 mb-6" data-i18n="credentials.subtitle">
+          Acreditación profesional verificable en gobierno de TI, agilidad organizacional, nube, ciberseguridad y alta dirección.
+        </p>
+
+        <!-- Official Credly Link -->
+        <a
+          href="https://credly.com/users/fernando-junior-hernandez"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl font-mono text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-amber-500/20 via-sky-500/20 to-cyan-500/20 border border-amber-400/40 text-amber-300 hover:border-amber-400 hover:text-white transition-all shadow-md group"
+        >
+          <i data-lucide="award" class="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform"></i>
+          <span data-i18n="credentials.credlyBadge">Ver Perfil Oficial en Credly</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all"></i>
+        </a>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div id="credentials-filter-container" class="flex flex-wrap items-center justify-center gap-2 mb-10"></div>
+
+      <!-- Credentials Grid -->
+      <div id="credentials-list-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    </div>
+  </section>
+
+  <!-- Executive Direct Contact Section -->
+  <section id="contact" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider mb-3 border border-sky-400/30 bg-sky-500/10 text-sky-400">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-sky-400"></i>
+          <span data-i18n="contact.badge">Contacto Directo & Alianzas</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 text-white" data-i18n="contact.title">
+          Hablemos de la Estrategia Tecnológica de tu Organización
+        </h2>
+        <p class="text-base sm:text-lg max-w-2xl font-normal text-slate-400" data-i18n="contact.subtitle">
+          Disponible para liderar posiciones de Dirección de TI (CIO / CTO), Consejos Consultivos y Consultoría Estratégica en Transformación Digital e IA.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Direct Channels -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="spotlight-card p-6">
+            <h3 class="text-lg font-bold mb-2 text-white">Canales Directos de Comunicación</h3>
+            <p class="text-xs sm:text-sm leading-relaxed mb-6 text-slate-300">
+              Respuesta ágil a directores generales, miembros de consejo, directores de talento y reclutadores C-Level.
+            </p>
+
+            <div class="flex items-center gap-2 text-xs font-mono text-slate-400 mb-6">
+              <i data-lucide="map-pin" class="w-4 h-4 text-sky-400 shrink-0"></i>
+              <span data-i18n="contact.location">Ciudad de México, CDMX (Disponibilidad inmediata para viajar)</span>
+            </div>
+
+            <!-- Direct Channels List -->
+            <div class="space-y-3">
+              <a
+                href="https://wa.me/525522973001"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 hover:bg-emerald-500/25 hover:border-emerald-400 transition-all font-semibold text-xs sm:text-sm group"
+              >
+                <div class="flex items-center gap-2.5">
+                  <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i>
+                  <span data-i18n="contact.ctaWhatsApp">Conversar por WhatsApp</span>
+                </div>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+
+              <a
+                href="mailto:fernior@gmail.com"
+                class="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-sky-500/15 border border-sky-500/30 text-sky-300 hover:bg-sky-500/25 hover:border-sky-400 transition-all font-semibold text-xs sm:text-sm group"
+              >
+                <div class="flex items-center gap-2.5">
+                  <i data-lucide="mail" class="w-4 h-4 text-sky-400"></i>
+                  <span data-i18n="contact.ctaEmail">Enviar Correo Ejecutivo</span>
+                </div>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+
+              <a
+                href="https://linkedin.com/in/fernior"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-blue-500/15 border border-blue-500/30 text-blue-300 hover:bg-blue-500/25 hover:border-blue-400 transition-all font-semibold text-xs sm:text-sm group"
+              >
+                <div class="flex items-center gap-2.5">
+                  <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i>
+                  <span data-i18n="contact.ctaLinkedIn">Conectar en LinkedIn</span>
+                </div>
+                <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+
+              <a
+                href="https://credly.com/users/fernando-junior-hernandez"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-300 hover:bg-amber-500/25 hover:border-amber-400 transition-all font-semibold text-xs sm:text-sm group"
+              >
+                <div class="flex items-center gap-2.5">
+                  <i data-lucide="award" class="w-4 h-4 text-amber-400"></i>
+                  <span data-i18n="contact.ctaCredly">Ver Credly Verificado</span>
+                </div>
+                <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Copy Snippets -->
+          <div class="grid grid-cols-2 gap-3">
+            <button
+              onclick="window.copyText('+525522973001', 'phone-copy-text', '¡Copiado!')"
+              class="p-3.5 rounded-xl border border-white/8 bg-white/5 hover:border-sky-400/30 text-left transition-all cursor-pointer flex flex-col justify-between"
+            >
+              <div class="flex items-center justify-between text-slate-400 mb-1">
+                <span class="text-[10px] font-mono uppercase font-bold text-sky-400">Teléfono / WhatsApp</span>
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </div>
+              <div id="phone-copy-text" class="text-xs font-mono font-bold truncate">+52 55 2297 3001</div>
+            </button>
+
+            <button
+              onclick="window.copyText('fernior@gmail.com', 'email-copy-text', '¡Copiado!')"
+              class="p-3.5 rounded-xl border border-white/8 bg-white/5 hover:border-sky-400/30 text-left transition-all cursor-pointer flex flex-col justify-between"
+            >
+              <div class="flex items-center justify-between text-slate-400 mb-1">
+                <span class="text-[10px] font-mono uppercase font-bold text-sky-400">Correo Directo</span>
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </div>
+              <div id="email-copy-text" class="text-xs font-mono font-bold truncate">fernior@gmail.com</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Message Composer -->
+        <div class="lg:col-span-7">
+          <div class="spotlight-card p-6 sm:p-8 border border-sky-400/30">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="p-2 rounded-xl bg-sky-500/20 text-sky-400">
+                <i data-lucide="message-square" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="text-lg sm:text-xl font-bold text-white" data-i18n="contact.interactive.title">Mensaje Rápido a Dirección</h3>
+                <p class="text-xs text-slate-400" data-i18n="contact.interactive.subtitle">Genera un mensaje pre-estructurado para contactar directamente a Fernando:</p>
+              </div>
+            </div>
+
+            <!-- Topic Selector -->
+            <div class="my-6">
+              <label class="block text-xs font-mono font-bold uppercase tracking-wider text-sky-400 mb-2" data-i18n="contact.interactive.placeholder">
+                Selecciona o escribe el tema de conversación:
+              </label>
+              <div id="contact-topics-container" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5"></div>
+            </div>
+
+            <!-- Inputs -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+              <div>
+                <label class="block text-[11px] font-mono uppercase text-slate-400 font-semibold mb-1">Tu Nombre / Cargo</label>
+                <input
+                  id="sender-name"
+                  type="text"
+                  placeholder="Ej. Lic. Carlos Méndez (CEO)"
+                  class="w-full px-3.5 py-2.5 rounded-xl text-xs sm:text-sm border border-white/10 bg-white/5 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                />
+              </div>
+              <div>
+                <label class="block text-[11px] font-mono uppercase text-slate-400 font-semibold mb-1">Empresa u Organización</label>
+                <input
+                  id="sender-company"
+                  type="text"
+                  placeholder="Ej. Grupo Financiero / Corporativo"
+                  class="w-full px-3.5 py-2.5 rounded-xl text-xs sm:text-sm border border-white/10 bg-white/5 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                />
+              </div>
+            </div>
+
+            <!-- Live Preview -->
+            <div class="mb-6">
+              <span class="block text-[11px] font-mono uppercase text-slate-400 font-semibold mb-1.5">Vista Previa del Mensaje Estructurado:</span>
+              <div id="message-preview" class="p-4 rounded-xl border border-white/8 bg-black/40 text-xs sm:text-sm font-mono leading-relaxed text-slate-300"></div>
+            </div>
+
+            <!-- Send Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center gap-3">
+              <button
+                type="button"
+                onclick="window.sendWhatsApp()"
+                class="w-full sm:w-1/2 flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-xs sm:text-sm tracking-wide text-slate-950 bg-emerald-400 hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/20 cursor-pointer"
+              >
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                <span data-i18n="contact.interactive.btnWhatsApp">Enviar vía WhatsApp</span>
+              </button>
+
+              <button
+                type="button"
+                onclick="window.sendEmail()"
+                class="w-full sm:w-1/2 flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-xs sm:text-sm tracking-wide text-white bg-sky-600 hover:bg-sky-500 transition-colors shadow-lg shadow-sky-500/20 cursor-pointer"
+              >
+                <i data-lucide="mail" class="w-4 h-4"></i>
+                <span data-i18n="contact.interactive.btnEmail">Enviar vía Correo</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Executive Footer -->
+  <footer class="border-t border-white/8 bg-[#05080F] text-slate-400">
+    <!-- Top CTA Banner -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="p-8 sm:p-12 rounded-3xl border border-white/10 bg-gradient-to-r from-[#0D1527] via-[#09101E] to-[#0A162B] shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="max-w-2xl text-center md:text-left">
+          <span class="text-xs font-mono font-bold uppercase tracking-wider text-sky-400 block mb-2">Liderazgo & Dirección de Tecnología</span>
+          <h3 class="text-2xl sm:text-3xl font-black tracking-tight mb-3 text-white">¿Listo para escalar la infraestructura, ciberseguridad e innovación de tu organización?</h3>
+          <p class="text-xs sm:text-sm text-slate-400" data-i18n="footer.tagline">Liderazgo Tecnológico, Infraestructura de Misión Crítica y Rendición de Cuentas al Negocio.</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full sm:w-auto">
+          <a
+            href="https://wa.me/525522973001"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-sky-400 to-cyan-300 text-slate-950 font-bold text-xs sm:text-sm text-center shadow-lg shadow-sky-500/20 hover:from-sky-300 hover:to-cyan-200 transition-all"
+          >
+            Iniciar Conversación
+          </a>
+          <a
+            href="mailto:fernior@gmail.com"
+            class="w-full sm:w-auto px-6 py-3.5 rounded-xl border border-white/10 bg-white/5 text-white hover:bg-white/10 text-xs sm:text-sm font-semibold text-center transition-all"
+          >
+            fernior@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Footer Meta -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-white/8">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-sky-500/20 border border-sky-400/40 flex items-center justify-center font-mono font-bold text-sky-400 text-xs">FJH</div>
+          <div class="text-left">
+            <div class="font-bold text-sm text-white">Fernando Junior Hernández</div>
+            <div class="text-[11px] font-mono text-sky-400">CIO / CTO · Misión Crítica, ERP e IA</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/525522973001" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-slate-400 hover:text-emerald-400 transition-colors"><i data-lucide="message-square" class="w-4 h-4"></i></a>
+          <a href="mailto:fernior@gmail.com" aria-label="Email" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-slate-400 hover:text-sky-400 transition-colors"><i data-lucide="mail" class="w-4 h-4"></i></a>
+          <a href="https://linkedin.com/in/fernior" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-slate-400 hover:text-sky-400 transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+          <a href="https://credly.com/users/fernando-junior-hernandez" target="_blank" rel="noopener noreferrer" aria-label="Credly" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-slate-400 hover:text-amber-400 transition-colors"><i data-lucide="award" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-slate-400 gap-2">
+        <span data-i18n="footer.rights">© 2026 Fernando Junior Hernández. Todos los derechos reservados.</span>
+        <span data-i18n="footer.note">Arquitectura Zero-Build de Alto Rendimiento · Despliegue Nativo en GitHub Pages · CDMX & Global.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Executive CV Download Modal -->
+  <div id="cv-modal" class="hidden fixed inset-0 z-50 items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-md">
+    <div class="modal-container relative w-full max-w-2xl rounded-3xl border border-white/12 bg-[#0A101D] text-slate-200 shadow-2xl flex flex-col overflow-hidden my-auto">
+      
+      <!-- Modal Header -->
+      <div class="modal-header flex items-center justify-between px-6 py-4 border-b border-white/10 shrink-0">
+        <div class="flex items-center gap-3">
+          <div class="p-2 rounded-xl bg-sky-500/20 text-sky-400">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h2 class="text-base sm:text-lg font-bold leading-tight text-white" data-i18n="cvModal.title">Descargar Currículum Vitae</h2>
+            <p class="text-xs font-mono text-sky-400" data-i18n="cvModal.subtitle">Fernando Junior Hernández · Director de TI (CIO / CTO)</p>
+          </div>
+        </div>
+        <button onclick="window.closeCVModal()" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Options Body -->
+      <div class="p-6 sm:p-8 space-y-5">
+        
+        <!-- Option 1: CV Visual Ejecutivo -->
+        <div class="spotlight-card p-5 border border-white/10 hover:border-sky-400/40 transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-400 shrink-0 mt-0.5">
+              <i data-lucide="printer" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white" data-i18n="cvModal.optionVisualTitle">CV Ejecutivo Visual (Formato PDF / Impresión)</h4>
+              <p class="text-xs text-slate-400 mt-1 leading-relaxed" data-i18n="cvModal.optionVisualDesc">
+                Diseño ejecutivo diagramado de alto impacto visual con métricas, cédulas y trayectoria consolidada.
+              </p>
+            </div>
+          </div>
+          <button
+            onclick="window.printVisualCV()"
+            class="px-4 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs font-mono whitespace-nowrap transition-all shadow-md shrink-0 cursor-pointer"
+            data-i18n="cvModal.btnOpenVisual"
+          >
+            Abrir / Imprimir Formato Visual
+          </button>
+        </div>
+
+        <!-- Option 2: CV Optimizado ATS -->
+        <div class="spotlight-card p-5 border border-white/10 hover:border-emerald-400/40 transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-400 shrink-0 mt-0.5">
+              <i data-lucide="file-check" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white" data-i18n="cvModal.optionAtsTitle">CV Optimizado para ATS (Texto Estructurado)</h4>
+              <p class="text-xs text-slate-400 mt-1 leading-relaxed" data-i18n="cvModal.optionAtsDesc">
+                Formato limpio 100% optimizado para lectura y parsing algorítmico por sistemas Workday, Taleo y Greenhouse.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-2 shrink-0 w-full sm:w-auto">
+            <button
+              onclick="window.copyText(document.querySelector('.ats-raw-source')?.textContent || 'CV ATS', 'copy-ats-btn-label', '¡Copiado!')"
+              class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 border border-white/10 font-mono text-xs font-semibold transition-all cursor-pointer text-center"
+            >
+              <span id="copy-ats-btn-label" data-i18n="cvModal.btnCopyAts">Copiar Texto ATS</span>
+            </button>
+            <button
+              onclick="window.downloadAtsCV()"
+              class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs font-mono whitespace-nowrap transition-all shadow-md cursor-pointer text-center"
+              data-i18n="cvModal.btnDownloadAts"
+            >
+              Descargar .txt
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hidden ATS Source for copy -->
+      <div class="ats-raw-source hidden">FERNANDO JUNIOR HERNÁNDEZ
+Director de Tecnologías de la Información (CIO / CTO) | Infraestructura, Ciberseguridad, Transformación Digital y ERP
+Ciudad de México, CDMX (Disponibilidad para viajar) | Tel: +52 55 2297 3001 | Email: fernior@gmail.com
+LinkedIn: linkedin.com/in/fernior | Credly: credly.com/users/fernando-junior-hernandez | Idiomas: Español (Nativo), Inglés (B2+ Avanzado)
+
+PERFIL EJECUTIVO
+Director de Tecnologías de la Información (CIO / CTO) con más de 15 años de trayectoria en posiciones de Dirección y Gerencia Senior de TI, liderando la estrategia tecnológica nacional, infraestructura corporativa de misión crítica, redes, ciberseguridad y transformación digital en el sector farmacéutico, servicios financieros regulados (CNBV) y empresas multinacionales. Sólida experiencia en arquitectura de software, gobierno de datos y gestión de sistemas ERP corporativos (implementación de ERP Intelisis y gestión de arquitecturas homologables a SAP y Oracle), Cloud Computing, BI e IA. Experto en Gobierno de TI (ITIL, COBIT, Scrum, SAFe, PMI), administración financiera de CAPEX y OPEX, negociación de contratos tecnológicos, licenciamiento, niveles de servicio (SLAs) y continuidad operativa (BCP y DRP).</div>
+
+    </div>
+  </div>
+
+  <!-- CDN Script Libraries -->
+  <!-- GSAP 3 & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Data Dictionary & Main Application Logic -->
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+</body>
 </html>

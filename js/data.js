@@ -1,20 +1,28 @@
-export const translations = {
+/**
+ * Fernando Junior Hernández · CIO / CTO Executive Portfolio
+ * Bilingual Data Store (Spanish & English)
+ * 
+ * Strict Style Rule: PROHIBITED to use em-dashes anywhere in the interface.
+ * Only commas, colons, interpuncts (·), or parentheses.
+ */
+
+window.PORTFOLIO_DATA = {
   es: {
     nav: {
       role: 'CIO / CTO',
       impact: 'Impacto',
-      pillars: 'Arquitectura & Pilares',
+      pillars: 'Pilares',
       cases: 'Casos de Éxito',
       trajectory: 'Trayectoria',
       credentials: 'Credenciales',
       contact: 'Contacto',
-      downloadCV: 'Descargar CV Ejecutivo',
-      menu: 'Menú',
-      close: 'Cerrar',
+      downloadCV: 'Descargar CV',
+      menu: 'Menú'
     },
     hero: {
       statusBadge: 'Disponible para Posiciones de Dirección de TI (CIO / CTO) · CDMX & Nacional',
-      name: 'Fernando Junior Hernández',
+      name: 'Fernando Junior',
+      surname: 'Hernández',
       headline: 'Director de Tecnologías de la Información (CIO / CTO)',
       rotatingTitles: [
         'Chief Information Officer (CIO)',
@@ -25,69 +33,79 @@ export const translations = {
       subheadline: 'Infraestructura de Misión Crítica · Ciberseguridad & Cumplimiento (CNBV / Farma) · Transformación Digital & ERP · IA Generativa y Agéntica',
       pitch: 'Más de 15 años liderando la estrategia tecnológica nacional, continuidad operativa (BCP/DRP), control financiero (CAPEX/OPEX) y equipos de más de 100 ingenieros en el sector farmacéutico, servicios financieros hiperregulados y multinacionales.',
       ctaPrimary: 'Agendar Conversación Ejecutiva',
-      ctaSecondary: 'Explorar Casos de Negocio',
-      photoBadges: {
+      ctaSecondary: 'Ver Casos de Negocio',
+      badges: {
         experience: '+15 Años Exp. Directiva',
         uptime: 'Misión Crítica 99.9%',
-        compliance: 'CNBV & Farma Compliance',
+        compliance: 'CNBV & Farma Compliance'
       },
-      quickStats: {
-        budget: 'Control CAPEX / OPEX',
-        engineers: '+100 Ingenieros Dirigidos',
+      stats: {
+        governance: 'Control CAPEX / OPEX',
+        leadership: '+100 Ingenieros Dirigidos',
         availability: 'Alta Disponibilidad 24/7'
       }
     },
     metrics: {
-      sectionBadge: 'Métricas de Impacto Directivo',
-      sectionTitle: 'Resultados Cuantificables al Servicio del Negocio',
-      sectionSubtitle: 'Indicadores clave de desempeño alcanzados a través de liderazgo estratégico, eficiencia financiera y rigor operativo.',
+      badge: 'Métricas de Impacto Directivo',
+      title: 'Resultados Cuantificables al Servicio del Negocio',
+      subtitle: 'Indicadores clave de desempeño alcanzados mediante liderazgo estratégico, disciplina financiera y rigor operativo.',
       items: [
         {
           id: 'metric-1',
-          value: '-95%',
+          target: 95,
+          prefix: '-',
+          suffix: '%',
           highlight: '4 días a 30 min',
           title: 'Tiempo de Suscripción en Seguros',
-          description: 'Aceleración drástica en la emisión de pólizas mediante arquitectura cloud en Microsoft Azure, analítica avanzada y pipelines CI/CD.',
+          description: 'Aceleración drástica en emisión de pólizas mediante arquitectura cloud en Microsoft Azure, analítica avanzada y pipelines CI/CD.',
           org: 'MetLife México',
           badge: 'Eficiencia Operativa',
           accent: 'cyan'
         },
         {
           id: 'metric-2',
-          value: '+100',
+          target: 100,
+          prefix: '+',
+          suffix: '',
           highlight: '6 Subdirecciones Técnicas',
           title: 'Liderazgo de Misión Crítica Nacional',
-          description: 'Dirección multidisciplinaria de infraestructura, redes, cómputo central y soporte para proteger y operar plataformas de más de 100M de registros.',
+          description: 'Dirección multidisciplinaria de infraestructura, redes, cómputo central y soporte para plataformas de más de 100M de registros.',
           org: 'Instituto Nacional Electoral (INE)',
           badge: 'Escala Nacional',
           accent: 'gold'
         },
         {
           id: 'metric-3',
-          value: '4x',
+          target: 4,
+          prefix: '',
+          suffix: 'x',
           highlight: '$0 Impacto en OPEX',
           title: 'Ancho de Banda Cuadruplicado & ERP',
-          description: 'Renegociación estratégica de telecomunicaciones (25 a 100 Mbps) y despliegue simultáneo de ERP Intelisis en 3 empresas del grupo.',
+          description: 'Renegociación estratégica de telecomunicaciones (25 a 100 Mbps) y despliegue de ERP Intelisis en 3 empresas del grupo.',
           org: 'Grupo Lefarma (Sector Salud)',
           badge: 'Optimización de Costos',
           accent: 'cyan'
         },
         {
           id: 'metric-4',
-          value: '$40 MDP',
+          target: 40,
+          prefix: '$',
+          suffix: ' MDP',
           highlight: 'Transacciones / Semana',
           title: 'Operación Comercial de Alto Volumen',
-          description: 'Arquitectura cloud en Microsoft Azure de alta disponibilidad y autoescalado para las plataformas de Starbucks México y Domino\'s Pizza.',
+          description: 'Arquitectura cloud en Microsoft Azure con autoescalado y 99.9% de uptime para plataformas de Starbucks México y Domino\'s Pizza.',
           org: 'Alsea México',
           badge: 'Misión Crítica Retail',
           accent: 'crimson'
         },
         {
           id: 'metric-5',
-          value: '100%',
+          target: 100,
+          prefix: '',
+          suffix: '%',
           highlight: 'CNBV + Política IA POL-019',
           title: 'Cumplimiento Regulatorio & Ciberseguridad',
-          description: 'Alineación total a estándares de la Comisión Nacional Bancaria y de Valores, ciberseguridad perimetral FortiGate, BCP/DRP y gobernanza de IA.',
+          description: 'Alineación total a estándares de la Comisión Nacional Bancaria y de Valores, ciberseguridad FortiGate, BCP/DRP y gobernanza de IA.',
           org: 'OFINSA (Sector Financiero)',
           badge: 'Cumplimiento Normativo',
           accent: 'gold'
@@ -95,10 +113,10 @@ export const translations = {
       ]
     },
     pillars: {
-      sectionBadge: 'Pilares Estratégicos',
-      sectionTitle: 'Los 4 Ejes del CIO / CTO Moderno',
-      sectionSubtitle: 'Equilibrio probado entre gobierno corporativo, control presupuestal, ciberseguridad perimetral e innovación tecnológica disruptiva.',
-      hoverHint: 'Pasa el cursor sobre cada tarjeta para explorar herramientas y marcos ejecutivos',
+      badge: 'Pilares Estratégicos',
+      title: 'Los 4 Ejes del CIO / CTO Moderno',
+      subtitle: 'Equilibrio probado entre gobierno corporativo, control presupuestal, ciberseguridad perimetral e innovación tecnológica disruptiva.',
+      hint: 'Pasa el cursor sobre cada tarjeta para explorar herramientas y marcos ejecutivos',
       items: [
         {
           id: 'pillar-1',
@@ -106,7 +124,7 @@ export const translations = {
           title: 'Gobierno de TI, Finanzas y Proveedores',
           subtitle: 'Alineación Estratégica & Rendición de Cuentas',
           description: 'Administración y control riguroso de presupuestos de CAPEX y OPEX. Implementación de marcos de gobierno ITIL, COBIT, Scrum, SAFe y PMI. Conducción de licitaciones corporativas (RFP), negociación contractual, optimización de licencias y cumplimiento estricto de SLAs.',
-          executiveFocus: 'Maximización del Retorno de Inversión (ROI) tecnológico y transparencia financiera ante Dirección General y Consejo de Administración.',
+          focus: 'Maximización del Retorno de Inversión (ROI) tecnológico y transparencia financiera ante Dirección General y Consejo de Administración.',
           tools: ['CAPEX & OPEX', 'ITIL v4', 'COBIT', 'Scrum & SAFe', 'PMI', 'Licitaciones RFP', 'Control SLAs / KPIs', 'Gestión de Contratos']
         },
         {
@@ -114,8 +132,8 @@ export const translations = {
           number: '02',
           title: 'Infraestructura, Redes y Ciberseguridad',
           subtitle: 'Resiliencia Operativa & Misión Crítica',
-          description: 'Garantía de alta disponibilidad (99.9%) y diseño de planes de continuidad del negocio (BCP) y recuperación ante desastres (DRP). Supervisión de operaciones 24/7 de SOC y NOC, seguridad perimetral FortiGate / FortiAnalyzer, Active Directory en Windows Server 2025, Microsoft 365 y monitoreo con PRTG.',
-          executiveFocus: 'Mitigación integral de riesgos tecnológicos y blindaje ante ciberamenazas en infraestructuras híbridas (Azure, AWS, OpenShift).',
+          description: 'Garantía de alta disponibilidad (99.9%) y diseño de planes de continuidad del negocio (BCP) y recuperación ante desastres (DRP). Supervisión 24/7 de SOC y NOC, seguridad perimetral FortiGate / FortiAnalyzer, Active Directory en Windows Server 2025, Microsoft 365 y monitoreo con PRTG.',
+          focus: 'Mitigación integral de riesgos tecnológicos y blindaje ante ciberamenazas en infraestructuras híbridas (Azure, AWS, OpenShift).',
           tools: ['FortiGate & FortiAnalyzer', 'BCP / DRP', 'SOC & NOC 24/7', 'Windows Server 2025', 'Microsoft 365', 'Azure & AWS', 'Red Hat OpenShift', 'PRTG']
         },
         {
@@ -124,7 +142,7 @@ export const translations = {
           title: 'Sistemas Corporativos (ERP), Salud y Finanzas',
           subtitle: 'Integración Empresarial & Trazabilidad',
           description: 'Implementación integral de sistemas ERP Intelisis (experiencia y capacidades homologables a ecosistemas SAP y Oracle) y CRM. Operación y soporte de ecosistemas multi-sitio (clínicas, laboratorios, corporativos y licitaciones) bajo marcos regulatorios de la CNBV y protección de datos (LGPDP).',
-          executiveFocus: 'Estandarización de procesos de negocio, integridad de la información y homologación tecnológica en entornos altamente regulados.',
+          focus: 'Estandarización de procesos de negocio, integridad de la información y homologación tecnológica en entornos altamente regulados.',
           tools: ['ERP Intelisis (SAP / Oracle equiv.)', 'CRM Corporativo', 'Regulación CNBV', 'Sector Farma & Salud', 'LGPDP', 'Integración APIs', 'BRDs Formales']
         },
         {
@@ -132,22 +150,16 @@ export const translations = {
           number: '04',
           title: 'Transformación Digital, BI e Inteligencia Artificial',
           subtitle: 'Innovación Agéntica & Arquitectura de Software',
-          description: 'Arquitectura de software empresarial y desarrollo de plataformas propietarias para gestión de identidad multibiométrica y trazabilidad. Diseño e implementación de la Política Corporativa de IA (POL-019), automatización agéntica con LLMs, n8n, PostgreSQL y bases vectoriales Qdrant.',
-          executiveFocus: 'Adopción ética, segura y auditable de IA Generativa para generar ventajas competitivas e incrementar la productividad corporativa.',
+          description: 'Arquitectura de software empresarial y plataformas propietarias para identidad multibiométrica y trazabilidad. Diseño e implementación de la Política Corporativa de IA (POL-019), automatización agéntica con LLMs, n8n, PostgreSQL y bases vectoriales Qdrant.',
+          focus: 'Adopción ética, segura y auditable de IA Generativa para generar ventajas competitivas e incrementar la productividad corporativa.',
           tools: ['Política IA POL-019', 'Agentes LLM & n8n', 'Qdrant Vector DB', 'PostgreSQL', 'Biometría Multimodal', 'Business Intelligence', 'Datadog', 'Ansible']
         }
       ]
     },
     cases: {
-      sectionBadge: 'Casos de Éxito Ejecutivos',
-      sectionTitle: 'Casos de Negocio & Transformación Real',
-      sectionSubtitle: 'Proyectos emblemáticos donde la visión tecnológica resolvió retos complejos de negocio, demostrando ROI y excelencia operativa.',
-      tabs: {
-        pharma: 'Sector Farmacéutico & Salud',
-        financial: 'Sector Financiero CNBV',
-        insurance: 'Seguros & Retail Multinacional',
-        critical: 'Misión Crítica Nacional'
-      },
+      badge: 'Casos de Éxito Ejecutivos',
+      title: 'Casos de Negocio & Transformación Real',
+      subtitle: 'Proyectos emblemáticos donde la visión tecnológica resolvió retos complejos de negocio, demostrando ROI y excelencia operativa.',
       labels: {
         challenge: 'El Reto Estratégico',
         strategy: 'La Estrategia de Dirección',
@@ -163,7 +175,7 @@ export const translations = {
           role: 'Gerente de Tecnología / CTO',
           period: '2021 · 2022',
           headline: 'Transformación digital integral, ERP Intelisis multi-empresa y conectividad 4x a $0 OPEX',
-          challenge: 'El grupo enfrentaba dispersión operativa con 4 clínicas, 1 laboratorio, 1 corporativo y 1 división de licitaciones trabajando de manera desarticulada, con enlaces de internet limitados (25 Mbps) y sin un sistema ERP unificado para consolidar inventarios, finanzas y operaciones.',
+          challenge: 'El grupo enfrentaba dispersión operativa con 4 clínicas, 1 laboratorio, 1 corporativo y 1 división de licitaciones trabajando de manera desarticulada, con enlaces de internet lentos (25 Mbps) y sin un sistema ERP unificado para consolidar inventarios, finanzas y operaciones.',
           strategy: 'Diseñé y ejecuté el plan maestro de digitalización: implementación del ERP Intelisis en 3 empresas y CRM en 2 unidades de negocio; formalización de requerimientos de negocio (BRDs), monitoreo centralizado y renegociación contractual estratégica de telecomunicaciones con proveedores nacionales.',
           results: [
             'Cuadruplicación del ancho de banda de 25 Mbps a 100 Mbps dedicados en todos los sitios con $0 costo adicional en OPEX.',
@@ -251,131 +263,118 @@ export const translations = {
       ]
     },
     timeline: {
-      sectionBadge: 'Línea de Tiempo Ejecutiva',
-      sectionTitle: 'Trayectoria de Liderazgo C-Level',
-      sectionSubtitle: 'Evolución directiva consolidada en sectores de alta complejidad: financiero regulado, electoral, seguros, salud y retail multinacional.',
+      badge: 'Línea de Tiempo Ejecutiva',
+      title: 'Trayectoria de Liderazgo C-Level',
+      subtitle: 'Evolución directiva consolidada en sectores de alta complejidad: financiero regulado, electoral, seguros, salud y retail multinacional.',
       currentBadge: 'Posición Actual',
       items: [
         {
-          id: 'exp-ofinsa',
-          period: '2026 · Actual',
+          period: 'Junio 2026 · Actual',
           role: 'Gerente de Sistemas y Director de Tecnología (CTO)',
           company: 'OFINSA, Operadora de Fondos Nafinsa, S.A. de C.V.',
           sector: 'Sector Financiero Regulado por CNBV',
           location: 'Ciudad de México, México',
           highlight: 'Estrategia global de TI, cumplimiento CNBV, ciberseguridad FortiGate, modernización a Windows Server 2025 y creación de la Política de IA POL-019.',
-          description: [
-            'Dirijo la estrategia integral de TI, seguridad de la información y gestión de riesgos informáticos bajo la regulación de la CNBV, encabezando auditorías, BCP/DRP y seguridad perimetral.',
+          achievements: [
+            'Dirijo la estrategia integral de TI, seguridad de la información y prevención de riesgos informáticos bajo la regulación de la CNBV, encabezando auditorías, BCP/DRP y seguridad perimetral.',
             'Aseguro la estabilidad y disponibilidad de infraestructura central, liderando la migración a Microsoft 365, actualización de Active Directory a Windows Server 2025 y monitoreo con PRTG.',
             'Reestructuré el área mediante ITIL e ITSM con GLPI, administrando presupuestos de CAPEX y OPEX, optimizando licencias y contratos corporativos.',
-            'Diseñé la Política de Gobernanza de IA Corporativa (POL-019) y arquitecto plataformas propietarias de identidad multibiométrica y analítica con n8n, PostgreSQL y Qdrant.'
+            'Diseñé la Política de Gobernanza de IA Corporativa (POL-019) y arquitecto plataformas de identidad multibiométrica y analítica con n8n, PostgreSQL y Qdrant.'
           ],
-          coreCompetencies: ['Dirección Estratégica CTO', 'Cumplimiento CNBV', 'Gobernanza de IA POL-019', 'FortiGate', 'Windows Server 2025', 'ITSM GLPI', 'CAPEX/OPEX'],
+          competencies: ['Dirección Estratégica CTO', 'Cumplimiento CNBV', 'Gobernanza de IA POL-019', 'FortiGate', 'Windows Server 2025', 'ITSM GLPI', 'CAPEX/OPEX'],
           current: true
         },
         {
-          id: 'exp-ine',
-          period: '2025 · 2026',
+          period: 'Marzo 2025 · Mayo 2026',
           role: 'Director de Infraestructura y Tecnología Aplicada',
           company: 'Instituto Nacional Electoral (INE)',
           sector: 'Organismo Constitucional Autónomo · Misión Crítica',
           location: 'Ciudad de México, México',
           highlight: 'Liderazgo directivo de más de 100 ingenieros en 6 subdirecciones técnicas para infraestructura de misión crítica de +100M de registros.',
-          description: [
+          achievements: [
             'Lideré la estructura técnica de más de 100 ingenieros en 6 subdirecciones (Infraestructura, Redes, Telecomunicaciones, Cómputo Central, Soporte y Aplicaciones).',
             'Supervisé la operación 24/7 del SOC y NOC institucional, ejecutando planes DRP y protección de datos personales (LGPDP) ante auditorías de control interno.',
             'Conduje la planeación presupuestal de CAPEX y OPEX, supervisando contratos tecnológicos de gran escala y cumplimiento riguroso de SLAs.',
             'Dirigí la migración hacia microservicios en Red Hat OpenShift con pipelines CI/CD, automatización con Ansible, observabilidad con Datadog y pilotos con AWS Bedrock.'
           ],
-          coreCompetencies: ['Liderazgo de +100 Ingenieros', 'Operación SOC / NOC 24/7', 'Red Hat OpenShift', 'Ansible', 'Datadog', 'Misión Crítica Nacional', 'LGPDP'],
+          competencies: ['Liderazgo de +100 Ingenieros', 'Operación SOC / NOC 24/7', 'Red Hat OpenShift', 'Ansible', 'Datadog', 'Misión Crítica Nacional', 'LGPDP'],
           current: false
         },
         {
-          id: 'exp-metlife',
-          period: '2022 · 2025',
+          period: 'Junio 2022 · Febrero 2025',
           role: 'IT Senior Regional Manager',
           company: 'MetLife México',
           sector: 'Sector Asegurador Multinacional',
           location: 'Ciudad de México, México',
           highlight: 'Liderazgo del programa regional Aura Next en Azure, reduciendo tiempos de suscripción de 4 días a 30 minutos (-95%).',
-          description: [
+          achievements: [
             'Lideré el programa regional Aura Next en Microsoft Azure con analítica avanzada, IA y pipelines CI/CD, reduciendo los tiempos de respuesta de 4 días a 30 minutos.',
             'Encabecé procesos corporativos de RFP para la evaluación y selección de socios tecnológicos y plataformas cloud, negociando presupuestos, alcances y SLAs.',
             'Implementé el marco de trabajo ITIL completo y estandaricé el aprovisionamiento de infraestructura en la nube con Terraform como código.',
             'Definí lineamientos de gobernanza tecnológica y seguridad en el SDLC, garantizando la integración segura entre sistemas legados (AS400) y plataformas modernas.'
           ],
-          coreCompetencies: ['Transformación Cloud Azure', 'Terraform IaC', 'Procesos RFP', 'Marco ITIL', 'Integración AS400', 'Optimización Operativa (-95%)'],
+          competencies: ['Transformación Cloud Azure', 'Terraform IaC', 'Procesos RFP', 'Marco ITIL', 'Integración AS400', 'Optimización Operativa (-95%)'],
           current: false
         },
         {
-          id: 'exp-lefarma',
-          period: '2021 · 2022',
+          period: 'Octubre 2021 · Junio 2022',
           role: 'Gerente de Tecnología / CTO',
           company: 'Grupo Lefarma',
           sector: 'Sector Farmacéutico y Salud',
           location: 'Ciudad de México, México',
           highlight: 'Implementación de ERP Intelisis en 3 empresas y CRM en 2 divisiones, cuadruplicando enlaces dedicados a costo cero.',
-          description: [
+          achievements: [
             'Diseñé y ejecuté la estrategia tecnológica del grupo, liderando el despliegue del ERP Intelisis para 3 empresas y CRM para 2 unidades comerciales.',
             'Garanticé la disponibilidad de infraestructura, redes y soporte para 4 clínicas, 1 laboratorio, 1 corporativo y 1 división de licitaciones públicas.',
             'Renegocié contratos con proveedores de telecomunicaciones, cuadruplicando el ancho de banda dedicado (de 25 a 100 Mbps) sin impacto en OPEX.'
           ],
-          coreCompetencies: ['ERP Intelisis (SAP/Oracle equiv.)', 'CRM Multi-Unidad', 'Redes 4x Ancho de Banda', 'Sector Salud / Farma', 'Metodología BRD'],
+          competencies: ['ERP Intelisis (SAP/Oracle equiv.)', 'CRM Multi-Unidad', 'Redes 4x Ancho de Banda', 'Sector Salud / Farma', 'Metodología BRD'],
           current: false
         },
         {
-          id: 'exp-alsea',
-          period: '2014 · 2021',
+          period: 'Julio 2014 · Octubre 2021',
           role: 'Gerente Senior de Tecnología',
           company: 'Alsea (Domino\'s Pizza México & Starbucks México)',
           sector: 'Retail y Restaurantes Multinacional',
           location: 'Ciudad de México, México',
           highlight: 'Arquitectura cloud en Azure para transacciones de $40 MDP/semana, crecimiento de eCommerce del 12% al 30% y 2 premios por \'Enlace\'.',
-          description: [
+          achievements: [
             'Diseñé y administré la arquitectura en Azure para plataformas transaccionales de Starbucks y Domino\'s, soportando ventas de $40 MDP semanales con alta disponibilidad.',
             'Lideré proyectos de comercio electrónico (Web, App y canal WhatsApp), aumentando la participación de ventas digitales del 12% al 30% a nivel nacional.',
             'Concebí y dirigí la plataforma corporativa \'Enlace\' para México, España, Argentina y Chile, reconocida con 2 premios de innovación por Innovation Week Magazine.'
           ],
-          coreCompetencies: ['Azure Cloud Architecture', 'eCommerce Escala Nacional', 'Premios de Innovación (2015, 2017)', 'Ventas Digitales', 'Retail Transaccional'],
+          competencies: ['Azure Cloud Architecture', 'eCommerce Escala Nacional', 'Premios de Innovación (2015, 2017)', 'Ventas Digitales', 'Retail Transaccional'],
           current: false
         }
       ]
     },
     credentials: {
-      sectionBadge: 'Credenciales & Respaldos',
-      sectionTitle: 'Formación Académica, Certificaciones & Insignias',
-      sectionSubtitle: 'Acreditación profesional verificable en gobierno de TI, agilidad organizacional, nube, ciberseguridad y alta dirección.',
+      badge: 'Credenciales & Respaldos',
+      title: 'Formación Académica, Certificaciones & Insignias',
+      subtitle: 'Acreditación profesional verificable en gobierno de TI, agilidad organizacional, nube, ciberseguridad y alta dirección.',
       credlyBadge: 'Ver Perfil Oficial en Credly',
       filterAll: 'Todas las Credenciales',
       filterDegrees: 'Grados Universitarios',
       filterCerts: 'Certificaciones Oficiales',
       filterExecutive: 'Formación Ejecutiva',
-      degreesTitle: 'Grados Académicos Registrados ante SEP',
-      certsTitle: 'Certificaciones Internacionales',
-      executiveTitle: 'Diplomados & Programas de Alta Dirección',
       items: [
         {
-          id: 'deg-1',
           type: 'degree',
           title: 'Maestría en Gestión de Innovación en Tecnologías de la Información y Comunicación',
           institution: 'INFOTEC, Centro de Investigación e Innovación en TIC del CONACYT',
           year: '2016 · 2018',
-          status: 'Titulado con Cédula Profesional Federal',
-          licenseId: 'Cédula: 12756886',
+          license: 'Cédula Profesional: 12756886',
           category: 'Grado Académico de Posgrado'
         },
         {
-          id: 'deg-2',
           type: 'degree',
           title: 'Licenciatura en Ciencias de la Informática',
           institution: 'Instituto Politécnico Nacional (IPN · UPIICSA)',
           year: '2004 · 2008',
-          status: 'Titulado con Cédula Profesional Federal',
-          licenseId: 'Cédula: 8842389',
+          license: 'Cédula Profesional: 8842389',
           category: 'Grado Académico Profesional'
         },
         {
-          id: 'cert-1',
           type: 'certification',
           title: 'Certified SAFe® 5 Practitioner',
           institution: 'Scaled Agile, Inc.',
@@ -383,7 +382,6 @@ export const translations = {
           category: 'Marcos de Agilidad Empresarial'
         },
         {
-          id: 'cert-2',
           type: 'certification',
           title: 'Certified SAFe® 5 Scrum Master',
           institution: 'Scaled Agile, Inc.',
@@ -391,7 +389,6 @@ export const translations = {
           category: 'Marcos de Agilidad Empresarial'
         },
         {
-          id: 'cert-3',
           type: 'certification',
           title: 'Programa Especializado en Gestión de Proyectos de Google',
           institution: 'Google / Coursera (Alineado a PMI)',
@@ -399,7 +396,6 @@ export const translations = {
           category: 'Dirección y Gobierno de Proyectos'
         },
         {
-          id: 'cert-4',
           type: 'certification',
           title: 'Microsoft Certified: Azure Fundamentals (AZ-900)',
           institution: 'Microsoft',
@@ -407,7 +403,6 @@ export const translations = {
           category: 'Arquitectura Cloud Computing'
         },
         {
-          id: 'cert-5',
           type: 'certification',
           title: 'SCRUM Product Owner Professional',
           institution: 'CertiProf International',
@@ -415,7 +410,6 @@ export const translations = {
           category: 'Estrategia y Producto Digital'
         },
         {
-          id: 'cert-6',
           type: 'certification',
           title: 'Microservices Certified Developer',
           institution: 'Software Architecture Guild',
@@ -423,7 +417,6 @@ export const translations = {
           category: 'Arquitectura de Software'
         },
         {
-          id: 'cert-7',
           type: 'certification',
           title: 'Agile Mindset Adoption (Management 3.0)',
           institution: 'Management 3.0 Global Network',
@@ -431,15 +424,6 @@ export const translations = {
           category: 'Liderazgo Transformacional'
         },
         {
-          id: 'cert-8',
-          type: 'certification',
-          title: 'Gobernanza de IA y Gestión de Agentes de IA',
-          institution: 'CertiProf / Ikigai',
-          year: '2026',
-          category: 'Inteligencia Artificial Directiva'
-        },
-        {
-          id: 'exec-1',
           type: 'executive',
           title: 'Artificial Intelligence & Data Science for Leaders',
           institution: 'The University of Chicago (Chicago Booth / Executive Ed.)',
@@ -447,7 +431,6 @@ export const translations = {
           category: 'Liderazgo Ejecutivo en IA'
         },
         {
-          id: 'exec-2',
           type: 'executive',
           title: 'Diplomado IA: Productos Digitales, Agentes y Análisis de Datos',
           institution: 'CENTRO, Diseño y Comunicación',
@@ -455,7 +438,6 @@ export const translations = {
           category: 'Innovación Agéntica'
         },
         {
-          id: 'exec-3',
           type: 'executive',
           title: 'Diplomado en Ciberseguridad Estratégica con IA',
           institution: 'CISO Club Executive Education',
@@ -463,37 +445,28 @@ export const translations = {
           category: 'Ciberdefensa Corporativa'
         },
         {
-          id: 'exec-4',
           type: 'executive',
           title: 'Diplomado en Administración de Proyectos (PMP / PMI)',
           institution: 'Tecnológico de Monterrey (ITESM)',
           year: '2018',
           category: 'Gestión Financiera y Proyectos'
-        },
-        {
-          id: 'exec-5',
-          type: 'executive',
-          title: 'AI & Innovation Bootcamp',
-          institution: 'ISDI Digital Talent / SICOSS',
-          year: '2024',
-          category: 'Transformación Tecnológica'
         }
       ]
     },
     contact: {
-      sectionBadge: 'Contacto Directo & Alianzas',
-      sectionTitle: 'Hablemos de la Estrategia Tecnológica de tu Organización',
-      sectionSubtitle: 'Disponible para liderar posiciones de Dirección de TI (CIO / CTO), Consejos Consultivos y Consultoría Estratégica en Transformación Digital e IA.',
-      location: 'Ciudad de México, CDMX (Disponibilidad inmediata para viajar y proyectos nacionales / internacionales)',
+      badge: 'Contacto Directo & Alianzas',
+      title: 'Hablemos de la Estrategia Tecnológica de tu Organización',
+      subtitle: 'Disponible para liderar posiciones de Dirección de TI (CIO / CTO), Consejos Consultivos y Consultoría Estratégica en Transformación Digital e IA.',
+      location: 'Ciudad de México, CDMX (Disponibilidad inmediata para viajar)',
       phone: '+52 55 2297 3001',
       email: 'fernior@gmail.com',
       ctaWhatsApp: 'Conversar por WhatsApp',
       ctaEmail: 'Enviar Correo Ejecutivo',
       ctaLinkedIn: 'Conectar en LinkedIn',
       ctaCredly: 'Ver Credly Verificado',
-      interactiveCard: {
+      interactive: {
         title: 'Mensaje Rápido a Dirección',
-        subtitle: 'Genera un mensaje pre-estructurado con un clic para contactar directamente a Fernando:',
+        subtitle: 'Genera un mensaje pre-estructurado para contactar directamente a Fernando:',
         placeholder: 'Selecciona o escribe el tema de conversación:',
         topics: [
           'Oportunidad para Posición de Dirección de TI (CIO / CTO)',
@@ -501,43 +474,44 @@ export const translations = {
           'Estrategia de Transformación Digital & Migración ERP',
           'Optimización de Infraestructura Cloud & Control CAPEX/OPEX'
         ],
-        btnSendWhatsApp: 'Enviar vía WhatsApp',
-        btnSendEmail: 'Enviar vía Correo'
+        btnWhatsApp: 'Enviar vía WhatsApp',
+        btnEmail: 'Enviar vía Correo'
       }
     },
     cvModal: {
-      title: 'Currículum Vitae Ejecutivo',
+      title: 'Descargar Currículum Vitae',
       subtitle: 'Fernando Junior Hernández · Director de TI (CIO / CTO)',
-      tabVisual: 'Versión Visual Ejecutiva',
-      tabATS: 'Versión ATS Optimizada',
-      btnCopy: 'Copiar Texto al Portapapeles',
-      btnDownloadATS: 'Descargar Texto ATS (.txt)',
-      btnPrint: 'Imprimir / Guardar como PDF',
-      copiedSuccess: '¡Texto copiado al portapapeles!',
-      close: 'Cerrar Visor'
+      optionVisualTitle: 'CV Ejecutivo Visual (Formato PDF / Impresión)',
+      optionVisualDesc: 'Diseño ejecutivo diagramado de alto impacto visual con métricas, cédulas y trayectoria consolidada.',
+      optionAtsTitle: 'CV Optimizado para ATS (Texto Estructurado)',
+      optionAtsDesc: 'Formato limpio 100% optimizado para lectura y parsing algorítmico por sistemas Workday, Taleo y Greenhouse.',
+      btnOpenVisual: 'Abrir / Imprimir Formato Visual',
+      btnDownloadAts: 'Descargar Archivo ATS (.txt)',
+      btnCopyAts: 'Copiar Texto ATS al Portapapeles',
+      close: 'Cerrar'
     },
     footer: {
       tagline: 'Liderazgo Tecnológico, Infraestructura de Misión Crítica y Rendición de Cuentas al Negocio.',
       rights: '© 2026 Fernando Junior Hernández. Todos los derechos reservados.',
-      strictRule: 'Diseño ejecutivo sin concesiones · Optimizado para GitHub Pages · CDMX & Global.'
+      note: 'Arquitectura Zero-Build de Alto Rendimiento · Despliegue Nativo en GitHub Pages · CDMX & Global.'
     }
   },
   en: {
     nav: {
       role: 'CIO / CTO',
       impact: 'Impact',
-      pillars: 'Architecture & Pillars',
+      pillars: 'Pillars',
       cases: 'Case Studies',
       trajectory: 'Career Track',
       credentials: 'Credentials',
       contact: 'Contact',
-      downloadCV: 'Download Executive CV',
-      menu: 'Menu',
-      close: 'Close',
+      downloadCV: 'Download CV',
+      menu: 'Menu'
     },
     hero: {
       statusBadge: 'Available for Executive IT Leadership (CIO / CTO) · Mexico City & Nationwide',
-      name: 'Fernando Junior Hernández',
+      name: 'Fernando Junior',
+      surname: 'Hernández',
       headline: 'Chief Information Officer (CIO / CTO)',
       rotatingTitles: [
         'Chief Information Officer (CIO)',
@@ -548,26 +522,28 @@ export const translations = {
       subheadline: 'Mission-Critical Infrastructure · Cybersecurity & Compliance (Banking / Healthcare) · Digital Transformation & ERP · Generative and Agentic AI',
       pitch: 'Over 15 years leading nationwide technological strategy, business continuity (BCP/DRP), financial discipline (CAPEX/OPEX), and engineering teams of over 100 specialists in pharmaceuticals, highly regulated financial services, and multinational corporations.',
       ctaPrimary: 'Schedule Executive Meeting',
-      ctaSecondary: 'Explore Case Studies',
-      photoBadges: {
+      ctaSecondary: 'View Case Studies',
+      badges: {
         experience: '+15 Yrs Executive Exp.',
         uptime: 'Mission-Critical 99.9%',
-        compliance: 'Banking & Pharma Compliance',
+        compliance: 'Banking & Pharma Compliance'
       },
-      quickStats: {
-        budget: 'CAPEX / OPEX Control',
-        engineers: '+100 Managed Engineers',
+      stats: {
+        governance: 'CAPEX / OPEX Control',
+        leadership: '+100 Managed Engineers',
         availability: '24/7 High Availability'
       }
     },
     metrics: {
-      sectionBadge: 'Executive Impact Metrics',
-      sectionTitle: 'Quantifiable Business Value Delivered',
-      sectionSubtitle: 'Key operational and financial indicators achieved through strategic leadership, rigorous governance, and technical precision.',
+      badge: 'Executive Impact Metrics',
+      title: 'Quantifiable Business Value Delivered',
+      subtitle: 'Key operational and financial indicators achieved through strategic leadership, rigorous governance, and technical precision.',
       items: [
         {
           id: 'metric-1',
-          value: '-95%',
+          target: 95,
+          prefix: '-',
+          suffix: '%',
           highlight: '4 days down to 30 min',
           title: 'Insurance Underwriting Velocity',
           description: 'Dramatic acceleration in policy issuance through cloud architecture in Microsoft Azure, advanced analytics, and CI/CD pipelines.',
@@ -577,7 +553,9 @@ export const translations = {
         },
         {
           id: 'metric-2',
-          value: '+100',
+          target: 100,
+          prefix: '+',
+          suffix: '',
           highlight: '6 Technical Directorates',
           title: 'Nationwide Mission-Critical Leadership',
           description: 'Multidisciplinary direction of infrastructure, networks, central computing, and support to safeguard systems with over 100M citizen records.',
@@ -587,7 +565,9 @@ export const translations = {
         },
         {
           id: 'metric-3',
-          value: '4x',
+          target: 4,
+          prefix: '',
+          suffix: 'x',
           highlight: '$0 OPEX Impact',
           title: 'Bandwidth Quadrupled & Multi-ERP',
           description: 'Strategic telecommunications renegotiation (25 to 100 Mbps) and simultaneous deployment of ERP Intelisis across 3 group entities.',
@@ -597,7 +577,9 @@ export const translations = {
         },
         {
           id: 'metric-4',
-          value: '$40M MXN',
+          target: 40,
+          prefix: '$',
+          suffix: 'M MXN',
           highlight: 'Transactions / Week',
           title: 'High-Volume Commercial Operations',
           description: 'Cloud architecture on Microsoft Azure with autoscaling and 99.9% uptime for transaction platforms at Starbucks Mexico and Domino\'s Pizza.',
@@ -607,7 +589,9 @@ export const translations = {
         },
         {
           id: 'metric-5',
-          value: '100%',
+          target: 100,
+          prefix: '',
+          suffix: '%',
           highlight: 'Banking CNBV + AI Policy POL-019',
           title: 'Regulatory Compliance & Cybersecurity',
           description: 'Complete alignment with national banking standards, FortiGate perimeter security, BCP/DRP protocols, and corporate AI governance.',
@@ -618,10 +602,10 @@ export const translations = {
       ]
     },
     pillars: {
-      sectionBadge: 'Strategic Pillars',
-      sectionTitle: 'The 4 Pillars of the Modern CIO / CTO',
-      sectionSubtitle: 'A battle-tested balance of corporate governance, financial stewardship, perimeter cybersecurity, and forward-looking technological innovation.',
-      hoverHint: 'Hover over each card to reveal executive toolsets and frameworks',
+      badge: 'Strategic Pillars',
+      title: 'The 4 Pillars of the Modern CIO / CTO',
+      subtitle: 'A battle-tested balance of corporate governance, financial stewardship, perimeter cybersecurity, and forward-looking technological innovation.',
+      hint: 'Hover over each card to reveal executive toolsets and frameworks',
       items: [
         {
           id: 'pillar-1',
@@ -629,7 +613,7 @@ export const translations = {
           title: 'IT Governance, Finance & Vendor Management',
           subtitle: 'Strategic Alignment & Executive Accountability',
           description: 'Strict management and stewardship of CAPEX and OPEX budgets. Implementation of ITIL, COBIT, Scrum, SAFe, and PMI governance frameworks. Corporate RFP leadership, vendor contract negotiation, license optimization, and strict SLA/KPI enforcement.',
-          executiveFocus: 'Maximizing technological ROI and establishing financial transparency before the Board of Directors and CEO.',
+          focus: 'Maximizing technological ROI and establishing financial transparency before the Board of Directors and CEO.',
           tools: ['CAPEX & OPEX', 'ITIL v4', 'COBIT', 'Scrum & SAFe', 'PMI', 'Corporate RFPs', 'SLA / KPI Control', 'Vendor Contracts']
         },
         {
@@ -638,7 +622,7 @@ export const translations = {
           title: 'Infrastructure, Networks & Cybersecurity',
           subtitle: 'Operational Resilience & Mission-Critical Uptime',
           description: 'Ensuring 99.9% uptime, business continuity plans (BCP), and disaster recovery protocols (DRP). 24/7 supervision of SOC and NOC operations, FortiGate / FortiAnalyzer perimeter security, Active Directory on Windows Server 2025, Microsoft 365, and PRTG monitoring.',
-          executiveFocus: 'Holistic technological risk mitigation and proactive cyber defense across hybrid clouds (Azure, AWS, OpenShift).',
+          focus: 'Holistic technological risk mitigation and proactive cyber defense across hybrid clouds (Azure, AWS, OpenShift).',
           tools: ['FortiGate & FortiAnalyzer', 'BCP / DRP', 'SOC & NOC 24/7', 'Windows Server 2025', 'Microsoft 365', 'Azure & AWS', 'Red Hat OpenShift', 'PRTG']
         },
         {
@@ -647,7 +631,7 @@ export const translations = {
           title: 'Enterprise Systems (ERP), Healthcare & Finance',
           subtitle: 'Business Integration & End-to-End Traceability',
           description: 'Comprehensive implementation of ERP Intelisis (capabilities fully equivalent to SAP and Oracle ecosystems) and corporate CRM. Multi-site operation and support (clinics, testing labs, corporate offices, public procurement) under banking regulations and privacy law (LGPDP).',
-          executiveFocus: 'Business process standardization, transactional data integrity, and compliance across heavily audited industries.',
+          focus: 'Business process standardization, transactional data integrity, and compliance across heavily audited industries.',
           tools: ['ERP Intelisis (SAP / Oracle equiv.)', 'Enterprise CRM', 'Banking Regulation', 'Healthcare & Pharma', 'Data Privacy (LGPDP)', 'API Integration', 'Formal BRDs']
         },
         {
@@ -656,21 +640,15 @@ export const translations = {
           title: 'Digital Transformation, BI & Artificial Intelligence',
           subtitle: 'Agentic Innovation & Enterprise Software Architecture',
           description: 'Software architecture and proprietary platform engineering for multibiometric identity verification and asset tracking. Design and execution of Corporate AI Governance Policy (POL-019), agentic workflows with LLMs, n8n, PostgreSQL, and Qdrant vector databases.',
-          executiveFocus: 'Secure, ethical, and auditable adoption of Generative AI to unlock strategic advantages and boost organizational productivity.',
+          focus: 'Secure, ethical, and auditable adoption of Generative AI to unlock strategic advantages and boost organizational productivity.',
           tools: ['AI Policy POL-019', 'LLM Agents & n8n', 'Qdrant Vector DB', 'PostgreSQL', 'Multimodal Biometrics', 'Business Intelligence', 'Datadog', 'Ansible']
         }
       ]
     },
     cases: {
-      sectionBadge: 'Executive Case Studies',
-      sectionTitle: 'Real-World Business Impact & Leadership',
-      sectionSubtitle: 'Key milestones where technological strategy solved critical operational challenges, proving tangible ROI and operational excellence.',
-      tabs: {
-        pharma: 'Healthcare & Pharma Sector',
-        financial: 'Regulated Financial Services',
-        insurance: 'Insurance & Multinational Retail',
-        critical: 'National Mission-Critical'
-      },
+      badge: 'Executive Case Studies',
+      title: 'Real-World Business Impact & Leadership',
+      subtitle: 'Key milestones where technological strategy solved critical operational challenges, proving tangible ROI and operational excellence.',
       labels: {
         challenge: 'The Strategic Challenge',
         strategy: 'The Executive Strategy',
@@ -774,131 +752,118 @@ export const translations = {
       ]
     },
     timeline: {
-      sectionBadge: 'Executive Career Track',
-      sectionTitle: 'C-Level Technology Leadership',
-      sectionSubtitle: 'Demonstrated trajectory across mission-critical sectors: regulated finance, national governance, insurance, healthcare, and multinational retail.',
+      badge: 'Executive Career Track',
+      title: 'C-Level Technology Leadership',
+      subtitle: 'Demonstrated trajectory across mission-critical sectors: regulated finance, national governance, insurance, healthcare, and multinational retail.',
       currentBadge: 'Current Position',
       items: [
         {
-          id: 'exp-ofinsa',
-          period: '2026 · Present',
+          period: 'June 2026 · Present',
           role: 'IT Systems Manager and Chief Technology Officer (CTO)',
           company: 'OFINSA, Operadora de Fondos Nafinsa, S.A. de C.V.',
           sector: 'Regulated Financial Services (Banking Oversight)',
           location: 'Mexico City, Mexico',
           highlight: 'Global IT strategy, banking compliance, FortiGate security, Windows Server 2025 migration, and authoring Corporate AI Policy POL-019.',
-          description: [
+          achievements: [
             'Lead global technology strategy, information security, and risk governance under national banking regulations, presiding over audits, BCP/DRP plans, and perimeter defense.',
             'Ensure enterprise stability, spearheading migration to Microsoft 365, updating Active Directory to Windows Server 2025, and instituting PRTG proactive monitoring.',
             'Restructured IT operations with ITIL and GLPI ITSM frameworks, managing CAPEX/OPEX budgets and optimizing corporate licensing agreements.',
             'Authored Corporate AI Governance Policy POL-019 and engineered proprietary multibiometric identity and analytics tools using n8n, PostgreSQL, and Qdrant.'
           ],
-          coreCompetencies: ['CTO Strategic Leadership', 'Banking Compliance', 'AI Policy POL-019', 'FortiGate', 'Windows Server 2025', 'ITSM GLPI', 'CAPEX/OPEX'],
+          competencies: ['CTO Strategic Leadership', 'Banking Compliance', 'AI Policy POL-019', 'FortiGate', 'Windows Server 2025', 'ITSM GLPI', 'CAPEX/OPEX'],
           current: true
         },
         {
-          id: 'exp-ine',
-          period: '2025 · 2026',
+          period: 'March 2025 · May 2026',
           role: 'Director of Infrastructure and Applied Technology',
           company: 'National Electoral Institute (INE)',
           sector: 'Constitutional Autonomous Body · Mission-Critical',
           location: 'Mexico City, Mexico',
           highlight: 'Executive leadership of 100+ engineers across 6 technical divisions for mission-critical infrastructure safeguarding 100M+ records.',
-          description: [
+          achievements: [
             'Directed a multidisciplinary engineering organization of 100+ specialists across 6 divisions (Infrastructure, Networks, Telecom, Central Computing, Support, Applications).',
             'Supervised continuous 24/7 SOC/NOC operations, executing disaster recovery protocols and privacy protection (LGPDP) during internal and external audits.',
             'Conducted financial planning and CAPEX/OPEX oversight, enforcing strict SLA benchmarks with global technology vendors and manufacturers.',
             'Guided infrastructure modernization toward microservices on Red Hat OpenShift with CI/CD pipelines, Ansible automation, Datadog observability, and AWS Bedrock.'
           ],
-          coreCompetencies: ['Leadership of 100+ Engineers', 'SOC / NOC 24/7', 'Red Hat OpenShift', 'Ansible', 'Datadog', 'National Mission-Critical', 'Privacy Law'],
+          competencies: ['Leadership of 100+ Engineers', 'SOC / NOC 24/7', 'Red Hat OpenShift', 'Ansible', 'Datadog', 'National Mission-Critical', 'Privacy Law'],
           current: false
         },
         {
-          id: 'exp-metlife',
-          period: '2022 · 2025',
+          period: 'June 2022 · February 2025',
           role: 'IT Senior Regional Manager',
           company: 'MetLife Mexico',
           sector: 'Multinational Insurance',
           location: 'Mexico City, Mexico',
           highlight: 'Led Aura Next regional program on Azure, reducing underwriting turnaround from 4 days to 30 minutes (-95%).',
-          description: [
+          achievements: [
             'Led regional Aura Next program on Microsoft Azure with advanced analytics, AI, and CI/CD pipelines, slashing underwriting cycle times from 4 days to 30 minutes.',
             'Spearheaded end-to-end corporate RFP processes for technology vendor evaluations, negotiating budgets, technical scopes, and binding SLAs.',
             'Implemented comprehensive ITIL framework and standardized cloud infrastructure provisioning using Terraform as code on Azure.',
             'Defined software governance and secure SDLC standards, ensuring seamless interoperability between legacy core engines (AS400) and modern cloud services.'
           ],
-          coreCompetencies: ['Azure Cloud Transformation', 'Terraform IaC', 'Corporate RFPs', 'ITIL Framework', 'AS400 Hybrid Integration', 'Operational Optimization (-95%)'],
+          competencies: ['Azure Cloud Transformation', 'Terraform IaC', 'Corporate RFPs', 'ITIL Framework', 'AS400 Hybrid Integration', 'Operational Optimization (-95%)'],
           current: false
         },
         {
-          id: 'exp-lefarma',
-          period: '2021 · 2022',
+          period: 'October 2021 · June 2022',
           role: 'Technology Manager / CTO',
           company: 'Grupo Lefarma',
           sector: 'Pharmaceutical & Healthcare Group',
           location: 'Mexico City, Mexico',
           highlight: 'Deployed ERP Intelisis across 3 companies and CRM for 2 divisions, quadrupling dedicated bandwidth at zero additional OPEX.',
-          description: [
+          achievements: [
             'Crafted and executed corporate IT strategy, directing implementation of ERP Intelisis for 3 entities and CRM for 2 commercial divisions.',
             'Guaranteed infrastructure uptime, networks, and technical support across 4 medical clinics, 1 diagnostic lab, 1 corporate office, and 1 bidding company.',
             'Renegotiated enterprise telecommunications agreements, quadrupling dedicated bandwidth (25 to 100 Mbps) with zero added impact on OPEX.'
           ],
-          coreCompetencies: ['ERP Intelisis (SAP/Oracle equiv.)', 'Multi-Unit CRM', '4x Bandwidth Expansion', 'Healthcare Sector', 'BRD Methodology'],
+          competencies: ['ERP Intelisis (SAP/Oracle equiv.)', 'Multi-Unit CRM', '4x Bandwidth Expansion', 'Healthcare Sector', 'BRD Methodology'],
           current: false
         },
         {
-          id: 'exp-alsea',
-          period: '2014 · 2021',
+          period: 'July 2014 · October 2021',
           role: 'Senior Technology Manager',
           company: 'Alsea (Domino\'s Pizza Mexico & Starbucks Mexico)',
           sector: 'Multinational Retail & Foodservice',
           location: 'Mexico City, Mexico',
           highlight: 'Architected Azure platforms supporting $40M MXN/week, grew eCommerce from 12% to 30%, and won 2 national innovation awards for \'Enlace\'.',
-          description: [
+          achievements: [
             'Engineered and managed Azure cloud architecture for Starbucks and Domino\'s transactional platforms, handling $40M MXN weekly with high availability.',
             'Led digital commerce roadmaps (Web, Mobile App, and WhatsApp channel), driving digital sales share from 12% to 30% nationwide.',
             'Conceived and engineered \'Enlace\', operational supervision and BI platform across Mexico, Spain, Argentina, and Chile, earning 2 Innovation Week Magazine awards.'
           ],
-          coreCompetencies: ['Azure Cloud Architecture', 'High-Volume Retail', 'National Innovation Awards (2015, 2017)', 'Digital Sales Growth', 'Transactional Systems'],
+          competencies: ['Azure Cloud Architecture', 'High-Volume Retail', 'National Innovation Awards (2015, 2017)', 'Digital Sales Growth', 'Transactional Systems'],
           current: false
         }
       ]
     },
     credentials: {
-      sectionBadge: 'Credentials & Certifications',
-      sectionTitle: 'Academic Degrees, Certifications & Badges',
-      sectionSubtitle: 'Verifiable credentials in IT governance, enterprise agility, cloud infrastructure, cybersecurity, and executive leadership.',
+      badge: 'Credentials & Certifications',
+      title: 'Academic Degrees, Certifications & Badges',
+      subtitle: 'Verifiable credentials in IT governance, enterprise agility, cloud infrastructure, cybersecurity, and executive leadership.',
       credlyBadge: 'Verify Official Credly Profile',
       filterAll: 'All Credentials',
       filterDegrees: 'University Degrees',
       filterCerts: 'Official Certifications',
       filterExecutive: 'Executive Programs',
-      degreesTitle: 'Official University Degrees Registered with SEP',
-      certsTitle: 'International Professional Certifications',
-      executiveTitle: 'Executive Diplomas & Advanced Leadership',
       items: [
         {
-          id: 'deg-1',
           type: 'degree',
           title: 'Master of Science in IT and Communications Innovation Management',
           institution: 'INFOTEC, National Council of Humanities, Sciences and Technologies (CONACYT)',
           year: '2016 · 2018',
-          status: 'Graduated with Official Professional License',
-          licenseId: 'License: 12756886',
+          license: 'Official License: 12756886',
           category: 'Postgraduate Master Degree'
         },
         {
-          id: 'deg-2',
           type: 'degree',
           title: 'Bachelor of Science in Computer Science & Information Systems',
           institution: 'National Polytechnic Institute (IPN · UPIICSA)',
           year: '2004 · 2008',
-          status: 'Graduated with Official Professional License',
-          licenseId: 'License: 8842389',
+          license: 'Official License: 8842389',
           category: 'Professional Bachelor Degree'
         },
         {
-          id: 'cert-1',
           type: 'certification',
           title: 'Certified SAFe® 5 Practitioner',
           institution: 'Scaled Agile, Inc.',
@@ -906,7 +871,6 @@ export const translations = {
           category: 'Enterprise Agile Frameworks'
         },
         {
-          id: 'cert-2',
           type: 'certification',
           title: 'Certified SAFe® 5 Scrum Master',
           institution: 'Scaled Agile, Inc.',
@@ -914,7 +878,6 @@ export const translations = {
           category: 'Enterprise Agile Frameworks'
         },
         {
-          id: 'cert-3',
           type: 'certification',
           title: 'Google Project Management Professional Certificate',
           institution: 'Google / Coursera (Aligned with PMI)',
@@ -922,7 +885,6 @@ export const translations = {
           category: 'Project Leadership & Governance'
         },
         {
-          id: 'cert-4',
           type: 'certification',
           title: 'Microsoft Certified: Azure Fundamentals (AZ-900)',
           institution: 'Microsoft',
@@ -930,7 +892,6 @@ export const translations = {
           category: 'Cloud Architecture'
         },
         {
-          id: 'cert-5',
           type: 'certification',
           title: 'SCRUM Product Owner Professional',
           institution: 'CertiProf International',
@@ -938,7 +899,6 @@ export const translations = {
           category: 'Digital Product Strategy'
         },
         {
-          id: 'cert-6',
           type: 'certification',
           title: 'Microservices Certified Developer',
           institution: 'Software Architecture Guild',
@@ -946,7 +906,6 @@ export const translations = {
           category: 'Software Architecture'
         },
         {
-          id: 'cert-7',
           type: 'certification',
           title: 'Agile Mindset Adoption (Management 3.0)',
           institution: 'Management 3.0 Global Network',
@@ -954,15 +913,6 @@ export const translations = {
           category: 'Transformational Leadership'
         },
         {
-          id: 'cert-8',
-          type: 'certification',
-          title: 'AI Governance & AI Agent Management',
-          institution: 'CertiProf / Ikigai',
-          year: '2026',
-          category: 'Executive Artificial Intelligence'
-        },
-        {
-          id: 'exec-1',
           type: 'executive',
           title: 'Artificial Intelligence & Data Science for Leaders',
           institution: 'The University of Chicago (Chicago Booth / Executive Ed.)',
@@ -970,7 +920,6 @@ export const translations = {
           category: 'Executive AI Leadership'
         },
         {
-          id: 'exec-2',
           type: 'executive',
           title: 'Diploma in AI: Digital Products, Agents and Data Analytics',
           institution: 'CENTRO, Advanced Design & Communication',
@@ -978,7 +927,6 @@ export const translations = {
           category: 'Agentic Innovation'
         },
         {
-          id: 'exec-3',
           type: 'executive',
           title: 'Executive Diploma in Strategic Cybersecurity with AI',
           institution: 'CISO Club Executive Education',
@@ -986,37 +934,28 @@ export const translations = {
           category: 'Corporate Cyber Defense'
         },
         {
-          id: 'exec-4',
           type: 'executive',
           title: 'Project Management Diploma (PMP / PMI Aligned)',
           institution: 'Tecnológico de Monterrey (ITESM)',
           year: '2018',
           category: 'Financial and Project Governance'
-        },
-        {
-          id: 'exec-5',
-          type: 'executive',
-          title: 'AI & Innovation Bootcamp',
-          institution: 'ISDI Digital Talent / SICOSS',
-          year: '2024',
-          category: 'Technological Transformation'
         }
       ]
     },
     contact: {
-      sectionBadge: 'Direct Contact & Strategic Inquiries',
-      sectionTitle: 'Let\'s Discuss Your Organization\'s Technological Future',
-      sectionSubtitle: 'Available for Chief Information Officer (CIO), Chief Technology Officer (CTO), Advisory Board roles, and Strategic Digital Transformation consulting.',
-      location: 'Mexico City, CDMX (Full availability for national and international executive travel)',
+      badge: 'Direct Contact & Strategic Inquiries',
+      title: 'Let\'s Discuss Your Organization\'s Technological Future',
+      subtitle: 'Available for Chief Information Officer (CIO), Chief Technology Officer (CTO), Advisory Board roles, and Strategic Digital Transformation consulting.',
+      location: 'Mexico City, CDMX (Full availability for executive travel)',
       phone: '+52 55 2297 3001',
       email: 'fernior@gmail.com',
       ctaWhatsApp: 'Connect via WhatsApp',
       ctaEmail: 'Send Executive Email',
       ctaLinkedIn: 'Connect on LinkedIn',
       ctaCredly: 'View Verified Credly',
-      interactiveCard: {
+      interactive: {
         title: 'Direct Executive Message',
-        subtitle: 'Generate a pre-formatted message with one click to connect directly with Fernando:',
+        subtitle: 'Generate a pre-formatted message to connect directly with Fernando:',
         placeholder: 'Select or write conversation topic:',
         topics: [
           'Inquiry regarding Executive IT Leadership (CIO / CTO)',
@@ -1024,25 +963,26 @@ export const translations = {
           'Digital Transformation & ERP Modernization Strategy',
           'Cloud Infrastructure Optimization & CAPEX/OPEX Efficiency'
         ],
-        btnSendWhatsApp: 'Send via WhatsApp',
-        btnSendEmail: 'Send via Email'
+        btnWhatsApp: 'Send via WhatsApp',
+        btnEmail: 'Send via Email'
       }
     },
     cvModal: {
-      title: 'Executive Curriculum Vitae',
+      title: 'Download Executive Curriculum Vitae',
       subtitle: 'Fernando Junior Hernández · Chief Information Officer (CIO / CTO)',
-      tabVisual: 'Visual Executive View',
-      tabATS: 'ATS Optimized View',
-      btnCopy: 'Copy Text to Clipboard',
-      btnDownloadATS: 'Download ATS Text (.txt)',
-      btnPrint: 'Print / Save as PDF',
-      copiedSuccess: 'Text successfully copied to clipboard!',
-      close: 'Close Viewer'
+      optionVisualTitle: 'Visual Executive CV (PDF / Print-Ready)',
+      optionVisualDesc: 'High-impact styled executive layout with KPIs, official licenses, and complete career trajectory.',
+      optionAtsTitle: 'ATS Optimized CV (Structured Text)',
+      optionAtsDesc: 'Clean format 100% optimized for parsing algorithms in Workday, Taleo, Greenhouse, and Lever.',
+      btnOpenVisual: 'Open / Print Visual Format',
+      btnDownloadAts: 'Download ATS File (.txt)',
+      btnCopyAts: 'Copy ATS Text to Clipboard',
+      close: 'Close'
     },
     footer: {
       tagline: 'Technology Leadership, Mission-Critical Infrastructure, and Business Accountability.',
       rights: '© 2026 Fernando Junior Hernández. All rights reserved.',
-      strictRule: 'Executive design with zero compromises · Engineered for GitHub Pages · CDMX & Global.'
+      note: 'High-Performance Zero-Build Architecture · Native GitHub Pages Deployment · CDMX & Global.'
     }
   }
 };
