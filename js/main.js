@@ -987,3 +987,4 @@ EDUCACIÓN Y CERTIFICACIONES
     gsap.from('#hero-photo-wrapper', { opacity: 0, scale: 0.95, duration: 1.1, delay: 0.5, ease: 'power3.out' });
   }
 });
+
