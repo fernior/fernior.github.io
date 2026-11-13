@@ -353,6 +353,7 @@ window.PORTFOLIO_DATA = {
       title: 'Formación Académica, Certificaciones & Insignias',
       subtitle: 'Acreditación profesional verificable en gobierno de TI, agilidad organizacional, nube, ciberseguridad y alta dirección.',
       credlyBadge: 'Ver Perfil Oficial en Credly',
+      accredibleBadge: 'Ver Perfil Oficial en Accredible',
       filterAll: 'Todas las Credenciales',
       filterDegrees: 'Grados Universitarios',
       filterCerts: 'Certificaciones Oficiales',
@@ -464,6 +465,7 @@ window.PORTFOLIO_DATA = {
       ctaEmail: 'Enviar Correo Ejecutivo',
       ctaLinkedIn: 'Conectar en LinkedIn',
       ctaCredly: 'Ver Credly Verificado',
+      ctaAccredible: 'Ver Accredible Verificado',
       interactive: {
         title: 'Mensaje Rápido a Dirección',
         subtitle: 'Genera un mensaje pre-estructurado para contactar directamente a Fernando:',
@@ -842,6 +844,7 @@ window.PORTFOLIO_DATA = {
       title: 'Academic Degrees, Certifications & Badges',
       subtitle: 'Verifiable credentials in IT governance, enterprise agility, cloud infrastructure, cybersecurity, and executive leadership.',
       credlyBadge: 'Verify Official Credly Profile',
+      accredibleBadge: 'Verify Official Accredible Profile',
       filterAll: 'All Credentials',
       filterDegrees: 'University Degrees',
       filterCerts: 'Official Certifications',
@@ -953,6 +956,7 @@ window.PORTFOLIO_DATA = {
       ctaEmail: 'Send Executive Email',
       ctaLinkedIn: 'Connect on LinkedIn',
       ctaCredly: 'View Verified Credly',
+      ctaAccredible: 'View Verified Accredible',
       interactive: {
         title: 'Direct Executive Message',
         subtitle: 'Generate a pre-formatted message to connect directly with Fernando:',
